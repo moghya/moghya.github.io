@@ -1,0 +1,98 @@
+#name h1{
+	font-size:  2em;
+	text-transform: uppercase;
+	font-family: 'Montez', cursive;
+}
+
+#name sub{
+	font-size: 50%;		
+	text-transform: lowercase;
+}
+
+#summary p{
+	text-align: justify;
+}
+
+.row {
+	margin-bottom:0px;
+}
+
+#image img{
+	height: 125px;
+	width: 125px;
+	filter: grayscale(1);
+	border: solid white 3px;
+}
+
+#links img{
+	
+	width: 35px;
+	height: 35px;
+	filter: grayscale(1);
+	border-radius: 50%;
+}
+
+.section{
+	padding-top: 0;
+	padding-bottom: 0.5rem;
+}
+
+.info{
+	height: 100%;
+}
+
+.tabs{
+
+	background-image: url('../img/bg.png');
+
+}
+
+.tabs .tab a.active {
+	color: white;
+
+}
+
+.tabs .tab a{
+	color: white;
+}
+
+.tabs .tab a:hover{
+	color: white;
+}
+
+.tabs .indicator{
+	background-color: white;
+}
+
+body{
+	/*background-color: #1f1f1f;*/
+	background-image: url('../img/bg.png');
+	color: white;
+}
+
+.project{
+	
+	background-color: rgba(255,255,255,0.13);
+	
+}
+
+a{
+	color: white;
+}
+.project.col.m6 {
+
+	width: 44%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 1%;
+    min-height: 200px;
+}
+
+blockquote{
+	border-left: 5px solid white;
+	text-align: justify;
+}
+
+.tag{
+	font-style: italic;
+}
