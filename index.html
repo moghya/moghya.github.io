@@ -6,13 +6,18 @@
 
 	<link rel="stylesheet" type="text/css" href="css/animate.css">	
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel='stylesheet' href='css/perfect-scrollbar.min.css' />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montez" >
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel='stylesheet' type="text/css" href='css/perfect-scrollbar.min.css' />
+	<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="css/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/materialize.min.js"></script>
 	<script src='js/perfect-scrollbar.jquery.min.js'></script>
+	<script src="js/sweetalert.min.js"></script>
 	
 </head>
 <body>
@@ -90,25 +95,76 @@
 		</div>
 	</div>
 	
-	<div id="pageb" class="page col m9">
+	<div id="pageb" class="page col m9 offset-m3">
 	
 		<ul id="tabs" class="tabs">
+			<li class="tab col s2"><a href="#hello">Hello</a></li>
 			<li class="tab col s2"><a href="#skills">Skills</a></li>
+			<li class="tab col s2"><a href="#interests">Interests</a></li>
 			<li class="tab col s2"><a href="#projects">Projects</a></li>
-			<li class="tab col s2"><a href="#education">Education</a></li>
-			<li class="tab col s4"><a href="#work">Work & Volunteer Experience</a></li>
-			<li class="tab col s2"><a href="#achievements">Achievements</a></li>
+			<li class="tab col s2"><a href="#experience">Experience</a></li>
+			<li class="tab col s2"><a href="#education">Education</a></li>		
 		</ul>
+		<div id="hello" class="info col s12"></div>
+		
+
 
 		<div id="skills" class="info col s12">
-			<h2>Skills</h2> 
-			<div class="row">
-				<div class="skill col m12">
+			<h2>Skills and Interests</h2> 
+
+			<div class="row">			
+				
+				<div class="col m3">
+					<div class="row"><i class="icon devicon-cplusplus-plain"></i></div>
+					<div class="row">
+						<p>
+							I have known C++ for last 4 years and I'm <i>profficient</i> in it.
+						</p>
 					
+					</div>
 				</div>
-			</div>  
-		</div>
+				<div class="col m3">
+					<div class="row"><i class="icon devicon-python-plain"></i></div>
+					<div class="row">
+						<p>
+							I have known C++ for last 4 years and I'm <i>profficient</i> in it.
+						</p>
+					
+					</div>
+				</div>
+				<div class="col m3">
+					<div class="row"><i class="icon devicon-javascript-plain"></i></div>
+					<div class="row">
+						<p>
+							I have known C++ for last 4 years and I'm <i>profficient</i> in it.
+						</p>
+					
+					</div>
+				</div>	
+				<div class="col m3">
+					<div class="row"><i class="icon devicon-php-plain"></i></div>
+					<div class="row">
+						<p>
+							I have known C++ for last 4 years and I'm <i>profficient</i> in it.
+						</p>
+					
+					</div>
+				</div>
 		
+
+			</div>  
+		
+		</div>
+
+
+
+
+
+
+
+		<div id="interests" class="info col s12">
+			<h2>Achievements</h2>
+		</div>
 		<div id="projects" class="info col s12 ">
 			<h2>projects</h2>
 			<div class="row">
@@ -181,16 +237,14 @@
 				</div>
 			</div>
 		</div>
-
+		<div id="experience" class="info col s12">
+			<h2>Work and Volunteer Experience</h2>
+		</div>
 		<div id="education" class="info col s12">
 			<h2>Education</h2>
 		</div>
-		<div id="work" class="info col s12">
-			<h2>Work and Volunteer Experience</h2>
-		</div>
-		<div id="achievements" class="info col s12">
-			<h2>Achievements</h2>
-		</div>
+		
+
 	
 	</div>
 
@@ -199,6 +253,10 @@
 	$(document).ready(function(){
 		$('#tabs').tabs({ 'swipeable': true });
 		$('.info').perfectScrollbar();
+		
+		
+
+
 	});
 	
 </script>

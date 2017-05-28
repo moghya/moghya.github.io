@@ -95,11 +95,7 @@ blockquote{
 .tag{
 	font-style: italic;
 }
-#projects{
-	max-height: 600px;
-	overflow-y: scroll;
-	position: relative;
-}
+
 
 
 .ps.ps--active-x > .ps__scrollbar-x-rail, .ps.ps--active-y > .ps__scrollbar-y-rail{
@@ -112,9 +108,8 @@ blockquote{
 
 
 .tabs-content.carousel .carousel-item{
-	height: 600px;
+	height:600px;
 	overflow-y: scroll;
-	
 }
 
 
@@ -130,7 +125,32 @@ blockquote{
 	display: block;
 }
 
-.skill.col.m6{
+#skills .col{
 	background-color: rgba(255,255,255,0.13);
-	min-height: 475px;
+	
+}
+#skills .icon{
+	font-size: 5rem;
+}
+
+
+
+#pagea{
+	position: fixed;
+}
+
+#skills .m3{
+	height: 241.683px;
+	padding: 4%;
+	border-radius: 50%;
+}
+
+.sweet-alert{
+	background-color: rgba(255,255,255,0.13);
+	color: white;
+}
+
+.sweet-alert h1,h2,h3,p,span{
+	color: white;
+	background: none;
 }
