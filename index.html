@@ -8,7 +8,12 @@
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel='stylesheet' href='css/perfect-scrollbar.min.css' />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src='js/perfect-scrollbar.jquery.min.js'></script>
+	
 </head>
 <body>
 
@@ -96,38 +101,87 @@
 		</ul>
 
 		<div id="skills" class="info col s12">
-			<h2>Skills</h2>
-			
+			<h2>Skills</h2> 
+			<div class="row">
+				<div class="skill col m12">
+					
+				</div>
+			</div>  
+		</div>
+		
+		<div id="projects" class="info col s12 ">
+			<h2>projects</h2>
 			<div class="row">
 				
 				<div class="project col m6">
-					<div class="row">
-						<a href="">
-							<span>FollowScreen<i class="material-icons right">language</i></span>
-						</a>
+					<div class="row projectname">						
+						<span>FollowScreen</span>
 						<hr>
 					</div>
-					<div class="row">
+					<div class="row projectdesc">
 						<blockquote>
 						Its a screen recorder written in python. It records the screen activities. I used PyAutoGUI and PIL modules for this. Audio capturing is yet to be added.
 						</blockquote>
 					</div>
-					<div class="row">
+					<div class="row projectlink">
 						<span class="tag">#python</span>
 						<span class="tag">#screen-recording</span>
+						<a href=""><i class="material-icons right">language</i></a>
+					</div>
+				</div>
+
+				<div class="project col m6">
+				
+				</div>	
+			</div> 
+			<div class="row">
+				
+				<div class="project col m6">
+					<div class="row projectname">						
+						<span>FollowScreen</span>
+						<hr>
+					</div>
+					<div class="row projectdesc">
+						<blockquote>
+						Its a screen recorder written in python. It records the screen activities. I used PyAutoGUI and PIL modules for this. Audio capturing is yet to be added.
+						</blockquote>
+					</div>
+					<div class="row projectlink">
+						<span class="tag">#python</span>
+						<span class="tag">#screen-recording</span>
+						<a href=""><i class="material-icons right">language</i></a>
+					</div>
+				</div>
+
+				<div class="project col m6">
+				
+				</div>	
+			</div> 
+			<div class="row">
+				
+				<div class="project col m6">
+					<div class="row projectname">						
+						<span>FollowScreen</span>
+						<hr>
+					</div>
+					<div class="row projectdesc">
+						<blockquote>
+						Its a screen recorder written in python. It records the screen activities. I used PyAutoGUI and PIL modules for this. Audio capturing is yet to be added.
+						</blockquote>
+					</div>
+					<div class="row projectlink">
+						<span class="tag">#python</span>
+						<span class="tag">#screen-recording</span>
+						<a href=""><i class="material-icons right">language</i></a>
 					</div>
 				</div>
 
 				<div class="project col m6">
 				
 				</div>
-				
-			</div>          
-            
+			</div>
 		</div>
-		<div id="projects" class="info col s12">
-			<h2>projects</h2>
-		</div>
+
 		<div id="education" class="info col s12">
 			<h2>Education</h2>
 		</div>
@@ -141,6 +195,12 @@
 	</div>
 
 </body>
-<script src="js/jquery.min.js"></script>
-<script src="js/materialize.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#tabs').tabs({ 'swipeable': true });
+		$('.info').perfectScrollbar();
+	});
+	
+</script>
+
 </html>

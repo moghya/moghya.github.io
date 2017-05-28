@@ -41,9 +41,9 @@
 	height: 100%;
 }
 
-.tabs{
+#pageb .tabs{
 
-	background-image: url('../img/bg.png');
+	background: none;
 
 }
 
@@ -82,8 +82,7 @@ a{
 .project.col.m6 {
 
 	width: 44%;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: 3%;
     padding: 1%;
     min-height: 200px;
 }
@@ -95,4 +94,43 @@ blockquote{
 
 .tag{
 	font-style: italic;
+}
+#projects{
+	max-height: 600px;
+	overflow-y: scroll;
+	position: relative;
+}
+
+
+.ps.ps--active-x > .ps__scrollbar-x-rail, .ps.ps--active-y > .ps__scrollbar-y-rail{
+	background: none;
+}
+
+.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y{
+	background-color: rgba(255,255,255,0.13);
+}
+
+
+.tabs-content.carousel .carousel-item{
+	height: 600px;
+	overflow-y: scroll;
+	
+}
+
+
+.tabs .tab a{
+	display: none;
+}
+
+.tabs .tab a.active{
+	display: block;
+}
+
+.tabs:hover a{
+	display: block;
+}
+
+.skill.col.m6{
+	background-color: rgba(255,255,255,0.13);
+	min-height: 475px;
 }
