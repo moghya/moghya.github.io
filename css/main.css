@@ -114,36 +114,40 @@ blockquote{
 
 
 .tabs .tab a{
-	display: none;
+	opacity: 0.2;
 }
 
-.tabs .tab a.active{
-	display: block;
-}
 
 .tabs:hover a{
-	display: block;
+	opacity: 1;
 }
 
 #skills .col{
 	background-color: rgba(255,255,255,0.13);
 	
 }
+
+
 #skills .icon{
-	font-size: 5rem;
+	font-size: 500%;
 }
 
-
+#skills .rating .material-icons{
+	font-size: 18px;
+}
 
 #pagea{
-	position: fixed;
+	
 }
 
-#skills .m3{
-	height: 241.683px;
-	padding: 4%;
+#skills .m2{
+	width: 14.666%;
+	margin: 1%;
+	padding: 2%;
 	border-radius: 50%;
 }
+
+
 
 .sweet-alert{
 	background-color: rgba(255,255,255,0.13);
@@ -153,4 +157,25 @@ blockquote{
 .sweet-alert h1,h2,h3,p,span{
 	color: white;
 	background: none;
+}
+
+.collapsible-header{
+	background:none;
+	border: none;
+}
+
+.collapsible{
+	border: none;
+}
+
+#skills svg path{
+	fill: white;
+
+}
+
+#skills svg {
+
+	height: 100%;
+	width: 100%;
+
 }
