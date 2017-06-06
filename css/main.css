@@ -9,7 +9,7 @@
 	text-transform: lowercase;
 }
 
-#summary p{
+#summary p, #contact p{
 	text-align: justify;
 }
 
@@ -18,10 +18,11 @@
 }
 
 #image img{
-	height: 125px;
-	width: 125px;
+	width: 39.5%;
 	filter: grayscale(1);
 	border: solid white 3px;
+	margin-left: 30.25%;
+	margin-right: 30.25%;
 }
 
 #links img{
@@ -75,7 +76,7 @@ body{
 	color: white;
 }
 
-.project, .education{
+.project, .education, .work{
 	
 	background-color: rgba(255,255,255,0.13);
 	
@@ -86,11 +87,22 @@ body{
 a{
 	color: white;
 }
-.project.col.m6 {
 
-	width: 44%;
-    margin: 3%;
-    padding: 1%;
+.collapsible-body.row {
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+#links .col.s2{
+	padding: 0;
+}
+.collapsible-header{
+	padding: 1%;
+}
+
+.project.col.m12 {
+    margin: 1%;
+    padding: 2%;
     min-height: 13rem
 }
 
@@ -187,6 +199,11 @@ blockquote{
 
 }
 
-.education.col.s12{
-	min-height: 15rem;
+.education.col.s12, .work.col.s12{
+	margin: 1%;
 }
+
+.collapsible-body{
+	border: none;
+}
+
