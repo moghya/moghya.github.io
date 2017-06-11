@@ -1,4 +1,4 @@
-#name h1{
+#name{
 	font-size:  2em;
 	text-transform: uppercase;
 	font-family: 'Montez', cursive;
@@ -76,7 +76,7 @@ body{
 }
 
 .project, .education, .work{	
-	background-color: rgba(255,255,255,0.13);
+	background-color: rgba(255,255,255,0.20);
 }
 
 .row.project,.row.education,.row.work{
@@ -117,7 +117,7 @@ blockquote{
 }
 
 .ps > .ps__scrollbar-y-rail > .ps__scrollbar-y{
-	background-color: rgba(255,255,255,0.13);
+	background-color: rgba(255,255,255,0.20);
 }
 
 
@@ -136,23 +136,6 @@ blockquote{
 	opacity: 1;
 }
 
-#skills .col{
-	background-color: rgba(255,255,255,0.13);
-	
-}
-
-
-#skills .icon{
-	font-size: 500%;
-}
-
-#skills .rating .material-icons{
-	font-size: 18px;
-}
-
-#pagea{
-	
-}
 
 #skills .m2{
 	width: 14.666%;
@@ -164,7 +147,7 @@ blockquote{
 
 
 .sweet-alert{
-	background-color: rgba(255,255,255,0.13);
+	background-color: rgba(255,255,255,0.20);
 	color: white;
 }
 
@@ -183,8 +166,7 @@ blockquote{
 }
 
 #skills svg path{
-	fill: white;
-
+	fill: rgba(255,255,255,1);
 }
 
 #skills svg {
