@@ -109,6 +109,16 @@ $(document).ready(function(){
 		
 $(window).resize(onWindowResize);
 
+document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.hello', {
+        strings: ["First sentence.</br>Second sentence", "Third sentence.</br>Fourth sentence"],
+        typeSpeed: 0,
+        cursorChar:"",
+        loop:true
+      });
+  });
+
+
 function onWindowResize(){
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));

@@ -82,8 +82,12 @@ body{
 	font-family: "Lekton", monospace;
 }
 
-.project, .education, .work{	
+.type,.project, .education, .work{	
 	background-color: rgba(255,255,255,0.20);
+}
+
+.type.col.m4{
+	min-height: 200px;
 }
 
 .row.project,.row.education,.row.work{
@@ -193,5 +197,11 @@ blockquote{
 }
 
 .education.col.s12, .work.col.s12{
+	margin: 1%;
+}
+
+
+object{
+	width: 17%;
 	margin: 1%;
 }
