@@ -84,6 +84,19 @@ function loadLinks(profileLinks){
 	$('#links').html(profileLinksInnerHTML);
 }
 
+function loadLikes(likes){
+	console.log('nanan');
+	likes = likes.sort(function(a,b){
+		return a.sn-b.sn;
+	});
+	var i;
+	var likesInnerHTML = '<h4>My Likes</h4>';
+	for(i=0;i<likes.length;i++){
+		likesInnerHTML+='<object type="image/svg+xml" data="img/'+likes[i].icon+'">'+likes[i].name+'</object>'
+	}
+	$('#likes').html(likesInnerHTML);
+}
+
 var profile;
 	swal(
 		{
@@ -100,11 +113,14 @@ $.get("js/profile.json",
 		$('#name').html(pInfo.fname+' '+pInfo.lname+'<sub>&lt'+pInfo.nick+'/&gt</sub>');
 		$('#image img').attr('src','img/'+pInfo.myimg);
 		$('#summary p').html(profile.summary);
+		loadLikes(profile.likes);
+		$('#helloText').html(profile.helloText);
 		loadLinks(profile.profileLinks);
 		loadSkills(profile.skills);
 		loadProjects(profile.projects);
 		loadWorks(profile.works);
 		loadEducations(profile.educations);
+
 		console.log(profile);
 });
 
@@ -114,7 +130,7 @@ $(document).ready(function(){
 	onWindowResize();
 });
 		
-$(window).resize(onWindowResize);
+$(window).resize(onWindowResize);	
 
 document.addEventListener('DOMContentLoaded', function(){
       Typed.new('.hello', {

@@ -539,8 +539,62 @@
 			"sn":10
 		}
 	],
+	"likes":[
+		{
+			"name":"Programming",
+			"icon":"programming.svg",
+			"sn":1
+		},
+		{
+			"name":"Maths",
+			"icon":"maths.svg",
+			"sn":2
+		},
+		{
+			"name":"Armed Forces",
+			"icon":"soldier.svg",
+			"sn":3
+		},
+		{
+			"name":"Reading",
+			"icon":"book.svg",
+			"sn":4
+		},
+		{
+			"name":"Singing",
+			"icon":"singer.svg",
+			"sn":5
+		},
+		{
+			"name":"Watermelon",
+			"icon":"watermelon.svg",
+			"sn":6
+		},
+		{
+			"name":"Chicken",
+			"icon":"chicken.svg",
+			"sn":7
+		},
+		{
+			"name":"Cycling",
+			"icon":"cycling.svg",
+			"sn":8
+		},
+		{
+			"name":"Trekking",
+			"icon":"trek.svg",
+			"sn":9
+		},
+		{
+			"name":"Camping",
+			"icon":"tent.svg",
+			"sn":10
+		}
+
+	],
 	"qoutes": [
 		"If you cannot be a pencil to write someone's happiness, then try to be an erases to erase someone's sorrows.",
 		"Believe and keep going."
-	]
+	],
+	"helloText":"<p>Thanks for visiting my webspace.</p><p>Currently I'm studying B.Tech Information Technology  at Walchand College of Engineering Sangli. I do Web development, Machine Learning and Computer Algorithms.I overwhelmingly like C++, Python and Javascript :)</p><p>How can I help you ?</br>I can design, develop and deliver technological solutions to your problems.</p><p>Do we have something in common ?</br>Let's have a talk about it and grow together.</br> We don't have anything in common ?</br>Oh then that's great, please introduce me something that I'm missing.</p>"
 }

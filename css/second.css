@@ -15,7 +15,7 @@
 	text-transform: lowercase;
 }
 
-p{
+#hello p,#summary p{
 	text-align: justify;
 }
 
