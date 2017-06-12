@@ -6,17 +6,12 @@
 		"lname": "Sawant",
 		"nick":"moghya",
 		"address": {
-
 			"list": ["Gupta Layout, Mahakali road, Washim, District-Washim, Maharashtra, India 444505 ",
 				"'OM' Jaihind colony, Vishrambag, Sangli District-Sangli, Maharashtra, India 416415"
 			]
 		},
-		"email": {
-			"list": ["sawantshubham571@gmail.com"]
-		},
-		"mob": {
-			"list": [9881464434]
-		}
+		"email": "sawantshubham571@gmail.com",
+		"mob": "+919881464434"
 	},
 	"educations": [
 		{
@@ -435,9 +430,7 @@
 			"toolsUsed": ["Blender", "Movie Maker"],
 			"tags": ["blender", "animation", "3d-modelling", "traffic rules"],
 			"shortInfo": "Its 3D animation video made using Blender Tool for spreading awareness regarding Traffic rules. Mini project for semester III.",
-			"images": ["", "", "", ""],
-			"objectives": ["", "", ""],
-			"futureScope": ["", "", ""]
+			"link":""
 		},
 		{
 			"projectTitle": "Smart Hospital Management",
@@ -446,10 +439,7 @@
 			"toolsUsed": ["c++", "qt"],
 			"tags": ["oop", "c++", "qt", "gui", "files"],
 			"shortInfo": "C++ Qt Standalone Application keeps track of every patient and its visits. Data collected can be used for Projects of Data Mining and Machine Learning as data sets",
-			"report": "project/mypro.html",
-			"images": ["", "", "", ""],
-			"objectives": ["", "", ""],
-			"futureScope": ["", "", ""]
+			"link":""
 		},
 		{
 			"projectTitle": "Seat Allocation",
@@ -458,10 +448,7 @@
 			"toolsUsed": ["c++"],
 			"tags": ["c++", "gayle-shapely", "ds", "oop"],
 			"shortInfo": "Simulation of college seat allocation process. Choice filling and Seat Allocation are performed. Modified Gayle-Shapely Algorithm implemented. Can be scaled using C++ CGI for deployment.",
-			"report": "project/mypro.html",
-			"images": ["", "", "", ""],
-			"objectives": ["", "", ""],
-			"futureScope": ["", "", ""]
+			"link":""
 		},
 		{
 			"projectTitle": "Online External Examination Portal",
@@ -470,10 +457,7 @@
 			"toolsUsed": ["php", "js", "mysql", "html", "css", "bootstrap"],
 			"tags": ["php", "js", "bootstrap", "mysql"],
 			"shortInfo": "It's a web application developed using PHP , MySQL, Bootstrap, JavaScript etc. for conducting practical exams online.",
-			"report": "project/mypro.html",
-			"images": ["", "", "", ""],
-			"objectives": ["", "", ""],
-			"futureScope": ["", "", ""]
+			"link":""
 		},
 		{
 			"projectTitle": "LookIn",
@@ -482,10 +466,7 @@
 			"toolsUsed": ["python", "sqllite3", "beautifulsoup", "requests"],
 			"tags": ["search engine", "python", "indexing", "web scraping"],
 			"shortInfo": "It's a search engine made using Python, Beautifulsoup . Which crawls downloaded websites and indexes them. After one time indexing it delivers search results ",
-			"report": "project/mypro.html",
-			"images": ["", "", "", ""],
-			"objectives": ["", "", ""],
-			"futureScope": ["", "", ""]
+			"link":""
 		},
 		{
 			"projectTitle": "dsalib ",
@@ -494,10 +475,9 @@
 			"toolsUsed": ["c++"],
 			"tags": ["ds", "algo", "template", "c++"],
 			"shortInfo": "Its a ready to use data structures and algorithms c++ template library.Many useful data structures and algorithms are implemented . One should just focus on his her project necessity and dsalib will take care of data structures and algorithms.",
-			"report": "project/mypro.html",
-			"images": ["", "", "", ""],
-			"objectives": ["", "", ""],
-			"futureScope": ["", "", ""]
+			"link":""
+
+
 		}
 	],
 	"summary": "Hi, I’m Shubham. I believe in Maths. I seek to learn and try to apply all that I learn in a way that makes life easier. I can design and develop technology solutions. Mathematics, Algorithms, Data Structures  and Machine Learning are my areas of Interest. I'm looking for an Internship where I can learn and grow by using my tech skills and make this world a better place.",

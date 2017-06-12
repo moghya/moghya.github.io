@@ -1,4 +1,3 @@
-
 #name{
 	font-size:  1.5rem;
 	text-transform: uppercase;
@@ -158,7 +157,11 @@ blockquote{
 }
 
 
-
+#moghyaSays{
+	display: none;
+    margin-top: 5%;
+    border-top: solid white 1px;
+}
 
 
 .collapsible-header,.collapsible-body{
@@ -199,4 +202,13 @@ button.confirm{
 object{
 	width: 16%;
 	margin: 1%;
+}
+
+#contact{
+	text-align: center;
+}
+
+#skills{
+	text-align: center;
+	font-size: 10px;
 }

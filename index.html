@@ -20,12 +20,15 @@
 		<script src="js/sweetalert.min.js"></script>
 		<script src="js/typed.min.js"></script>	
 	</head>
-	<body>
+	<body onload="onBodyLoad()">
 
 		<div class="row">
 			<div id="pagea" class="page col m3 s12">
 				<div class="row"><h1 id="name" class="center-align"></h1></div>
 				<div id="image" class="row"><img class="circle" src=""></div>
+				<div id="contact" class="row">
+					
+				</div>
 				<div id="summary" class="row"><div class="col m12"><p></p></div></div>
 				<div id="links" class="row"></div>
 			</div>
@@ -42,24 +45,22 @@
 
 					<div class="row">
 						<div id="helloText" class="col m6 s12 "></div>
-						<div id="likes" class="col m6 s12">
-						</div>
-					</div>
-					<hr>
+						<div id="likes" class="col m6 s12"></div>
+					</div>		
 
 
 					<!-- Please support by not removing this section-->
-					<div class="row">
-						<div class="col m6">					
-
+					<div id="moghyaSays" class="row">
+						<h6>Here's the Recipe</h6>	
+						<div class="col m6">			
 							<div class="row">
-								Would you like to have your own portfolio in this template ?			It's pretty easy, moghya covered it up for everyone out their. All the content on this website is dynamically loaded from JSON data.Fork this repo on github and edit js/profile.json for adding your data.<br>
-								If you like this website, consider giving a star to its repo here.
+								Would you like to have your own portfolio in this template ?			It's pretty easy, <a href="https://github.com/moghya">moghya</a> covered it up for everyone out their. All the content on this website is dynamically loaded from JSON data.Fork this <a href="https://github.com/moghya/moghya.github.io/">repo</a> on github and edit <a href="https://github.com/moghya/moghya.github.io/blob/master/js/profile.json">js/profile.json</a> for adding your data.<br>
+								If you like this website, consider giving a star to its repo <a href="https://github.com/moghya/moghya.github.io/">here</a>.
 							</div>
 						</div>
 						<div class="col m6">
 							<div class="row">
-							I thank following sources, people and organisations for helping me in development of this portfolio template.
+							I extend my warm Gratitude to following organisations and people.
 							</div>
 							<div class="row">
 								<div class="col m4 s4"><a href="https://stackoverflow.com/">Stack Overflow</a></div>
@@ -81,6 +82,9 @@
 								<div class="col m4 s4"><a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a></div>
 								<div class="col m4 s4"><a href="https://www.google.com/chrome/index.html">Chrome</a></div>
 							</div>
+							<div class="row">
+								<div class="col m4 s4"><a href="https://daneden.github.io/animate.css/">Animate.CSS</a></div>	
+							</div>
 						</div>
 					</div>
 				</div>
@@ -92,15 +96,4 @@
 		</div>
 	</body>
 	<script src="js/index.js"></script>
-	
-	<!-- Please Setup Your Own Google Analytics -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-100916337-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
 </html>

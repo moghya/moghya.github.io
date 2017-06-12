@@ -5,7 +5,7 @@ function loadSkills(skills){
 
 			var row = '<div class="row">';
 			for(j=i;j<i+6&&j<skills.length;j++){
-				var skill = '<div class="col m2 "><svg viewBox="0 0 128 128">													<path d="'+skills[j].icon+'"></path>								</svg>																</div>';
+				var skill = '<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+skills[j].icon+'"></path></svg>'+skills[j].name+'</div>';
 				row+=skill;
 				
 			}
@@ -30,7 +30,7 @@ function loadProjects(projects){
 		project+=toolsUsed;
 		tags = '<div class=row">'
 		for(j=0;j<projects[i].tags.length;j++)tags+='<span class="tag">#'+projects[i].tags[j]+'</span>&nbsp';
-		tags+='<a href=""><i class="material-icons right">language</i></a></div>';
+		tags+='<a href="'+projects[i].link+'" target="_blank"><i class="material-icons right">language</i></a></div>';
 		project+=tags;
 		project+='</div><div class="col m6 s12 details">'+projects[i].shortInfo+'</div></div>';
 		projectsInnerHTML+=project;
@@ -111,6 +111,7 @@ $.get("js/profile.json",
 		$('title').html(pInfo.nick+'|Portfolio');
 		$('#name').html(pInfo.fname+' '+pInfo.lname+'<sub>&lt'+pInfo.nick+'/&gt</sub>');
 		$('#image img').attr('src','img/'+pInfo.myimg);
+		$('#contact').html('Call me:'+pInfo.mob+'</br> Mail me:'+pInfo.email);
 		$('#summary p').html(profile.summary);
 		loadLikes(profile.likes);
 		$('#helloText').html(profile.helloText);
@@ -119,11 +120,16 @@ $.get("js/profile.json",
 		loadProjects(profile.projects);
 		loadWorks(profile.works);
 		loadEducations(profile.educations);
-
 		console.log(profile);
 });
 
+function onBodyLoad(){
+	console.log('body loaded');
+	$('#moghyaSays').css('display','block');
+}
+
 $(document).ready(function(){
+	
 	$('#tabs').tabs({ 'swipeable': true });
 	$('.info').perfectScrollbar();
 	onWindowResize();
