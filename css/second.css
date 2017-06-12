@@ -1,3 +1,4 @@
+
 #name{
 	font-size:  2em;
 	text-transform: uppercase;
@@ -86,8 +87,10 @@ body{
 	margin-bottom: 1%;
 }
 
+	
 .col.m6.s12.details{
-	border-left: solid white 0.25rem;
+	border-left: solid white 2px;
+
 }
 
 a{
@@ -156,17 +159,24 @@ blockquote{
 	background: none;
 }
 
-.collapsible-header{
-	background:none;
+
+.collapsible-header,.collapsible-body{
+	background: none;
 	border: none;
+	padding: 0;
 }
 
 .collapsible{
 	border: none;
+	box-shadow: none;
 }
 
 #skills svg path{
 	fill: rgba(255,255,255,1);
+}
+
+#links svg path{
+	fill: white;
 }
 
 #skills svg {
@@ -179,8 +189,3 @@ blockquote{
 .education.col.s12, .work.col.s12{
 	margin: 1%;
 }
-
-.collapsible-body{
-	border: none;
-}
-

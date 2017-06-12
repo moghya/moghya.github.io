@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html>	
 	<head>
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,72 +10,24 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/materialize.min.js"></script>
-		<script src="js/i.js"></script>
 	</head>
 	<body>
-		<div id="page">
-			<div id="name" class="section">
-				<h1 class="center-align">Name of Person<sub>&lt nick / &gt</sub></h1>
+		<div id="page" class="">
+			<div  class="section">
+				<h1 id="name" class="center-align">Name of Person<sub>&lt nick / &gt</sub></h1>
 			</div>
 			<div id="image" class="section row">		
 				<img class="circle" src="img/image.jpg">	
 			</div>
 			<div id="summary" class="section row">
 				<div class="col m6 offset-m3">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco ldunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute 
+					<p>
 					</p>
 				</div>
 			</div>
-			<div id="links" class="section row">
-				<div class="col m6 s12">
-					<div class="col m2 offset-m2 s2">
-						<img src="img/github.png">
-					</div>
-					<div class="col m2 s2">
-						<img src="img/linkedin.png">
-					</div>
-					<div class="col m2 s2">
-						<img src="img/codeforces.png">
-					</div>
-					<div class="col m2 s2">
-						<img src="img/codechef.png">
-					</div>
-					<div class="col m2 s2">
-						<img src="img/hackerrank.png">
-					</div>
-				</div>
-				<div class="col m6">
-					<div class="col m2 s2">
-						<img src="img/hackerearth.png">
-					</div>
-					<div class="col m2 s2">
-						<img src="img/medium.png">
-					</div>
-					<div class="col m2 s2">
-						<img src="img/quora.png">
-					</div>
-					<div class="col m2 s2">
-						<img src="img/facebook.png">
-					</div>
-					<div class="col m2 s2">
-						<img src="img/twitter.png">
-					</div>
-				</div>
-			</div>
+			<div id="links" class="section row"></div>
+
 		</div>
 	</body>
-	<script>
-		$(document).ready(function(){
-			onWindowResize();
-		});
-		$(window).resize(onWindowResize);
-		function onWindowResize(){
-			$('#image img').css('height',$('#image img').css('width'));
-		}
-		
-	</script>
+	<script src="js/index.js"></script>
 </html>

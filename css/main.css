@@ -1,4 +1,4 @@
-#name h1{
+#name{
 	font-size:  4rem;
 	text-transform: uppercase;
 	font-family: 'Montez', cursive;
@@ -34,7 +34,6 @@
 }
 
 body{
-	/*background-color: #1f1f1f;*/
 	background-image: url('../img/bg.png');
 	color: white;
 }
