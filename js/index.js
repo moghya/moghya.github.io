@@ -27,11 +27,20 @@
 				$('#image img').attr('src','img/'+pInfo.myimg);
 				$('#summary p').html(profile.summary);
 				loadLinks(profile.profileLinks);
-		});
+			}
+		);
+
+
 		$(document).ready(function(){
 			onWindowResize();
 		});
+
+
+
+
+
 		$(window).resize(onWindowResize);
+
 		function onWindowResize(){
 			$('#image img').css('height',$('#image img').css('width'));
 		}

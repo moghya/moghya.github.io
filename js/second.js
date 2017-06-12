@@ -5,7 +5,7 @@ function loadSkills(skills){
 
 			var row = '<div class="row">';
 			for(j=i;j<i+6&&j<skills.length;j++){
-				var skill = '<div class="col m2">														<svg viewBox="0 0 128 128">													<path d="'+skills[j].icon+'"></path>								</svg>																</div>';
+				var skill = '<div class="col m2 "><svg viewBox="0 0 128 128">													<path d="'+skills[j].icon+'"></path>								</svg>																</div>';
 				row+=skill;
 				
 			}
@@ -21,7 +21,7 @@ function loadProjects(projects){
 	var i=0,j;
 	var projectsInnerHTML='';
 	for(i=0;i<projects.length;i++){					
-		project = ' <div class="row project"><div class="col m6 s12"><div class="row"><span>'+projects[i].projectTitle+'</span><hr></div><div class="row"><span>'+projects[i].periodStart+'-'+projects[i].periodEnd+'</span></div>';
+		project = ' <div class="row project"><div class="col m6 s12"><div class="row"><span class="title">'+projects[i].projectTitle+'</span><hr></div><div class="row"><span>'+projects[i].periodStart+'-'+projects[i].periodEnd+'</span></div>';
 		toolsUsed = '<div class="row">Tools Used:&nbsp';
 		for(j=0;j<projects[i].toolsUsed.length;j++){
 			toolsUsed+='<span>'+projects[i].toolsUsed[j]+'</span>&nbsp';
@@ -42,7 +42,7 @@ function loadWorks(works){
 	var i;
 	var worksInnerHTML = '';
 	for(i=0;i<works.length;i++){
-		worksInnerHTML+='<div class="row work"><div class="col m6 s12"><div class="row">'+works[i].workPosition+'<hr></div><div class="row">'+ works[i].periodStart+ '-' + works[i].periodEnd +'</div><div class="row">'+works[i].organisation+'</div></div><div class="col m6 s12 details"><div class="row">'+works[i].experience+'</div></div></div>';
+		worksInnerHTML+='<div class="row work"><div class="col m6 s12"><div class="row title">'+works[i].workPosition+'<hr></div><div class="row">'+ works[i].periodStart+ '-' + works[i].periodEnd +'</div><div class="row">'+works[i].organisation+'</div></div><div class="col m6 s12 details"><div class="row">'+works[i].experience+'</div></div></div>';
 	}
 	$('#experience').html(worksInnerHTML);
 }
@@ -51,7 +51,7 @@ function loadEducations(educations){
 	var i=0,j;
 	var educationsInnerHTML = '';
 	for(i=0;i<educations.length;i++){
-		education = '<div class="row education"><div class="col m6 s12">					<div class="row">'+educations[i].course+'<hr></div><div class="row">'+educations[i].periodStart+'-'+educations[i].periodEnd+'</div><div class="row">'+educations[i].inst+'</div><div class="row">'+educations[i].board+'</div>		<div class="row">Scored: '+educations[i].score+'</div></div><div class="col m6 s12 details"><ul class="collapsible" data-collapsible="accordion"><li><div class="collapsible-header"><i class="material-icons">view_list</i>Completed following Core courses</div><div class="collapsible-body">';
+		education = '<div class="row education"><div class="col m6 s12">					<div class="row title">'+educations[i].course+'<hr></div><div class="row">'+educations[i].periodStart+'-'+educations[i].periodEnd+'</div><div class="row">'+educations[i].inst+'</div><div class="row">'+educations[i].board+'</div>		<div class="row">Scored: '+educations[i].score+'</div></div><div class="col m6 s12 details"><ul class="collapsible" data-collapsible="accordion"><li><div class="collapsible-header"><i class="material-icons">view_list</i>Completed following Core courses</div><div class="collapsible-body">';
 		var courses = educations[i].courses;
 		courses.sort(function(a,b){
 			return a.sn-b.sn;

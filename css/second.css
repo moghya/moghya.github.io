@@ -1,8 +1,13 @@
 
 #name{
-	font-size:  2em;
+	font-size:  1.5rem;
 	text-transform: uppercase;
-	font-family: 'Montez', cursive;
+	font-family: 'Kaushan Script' , sans-serif;
+}
+
+.title{
+	font-family: 'Kaushan Script' , sans-serif;
+	font-size: 1.25rem;
 }
 
 #name sub{
@@ -74,6 +79,7 @@ body{
 	/*background-color: #1f1f1f;*/
 	background-image: url('../img/bg.png');
 	color: white;
+	font-family: "Lekton", monospace;
 }
 
 .project, .education, .work{	

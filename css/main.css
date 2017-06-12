@@ -1,7 +1,7 @@
 #name{
 	font-size:  4rem;
 	text-transform: uppercase;
-	font-family: 'Montez', cursive;
+	font-family: 'Kaushan Script' , sans-serif;
 }
 
 #name sub{
@@ -36,6 +36,7 @@
 body{
 	background-image: url('../img/bg.png');
 	color: white;
+	font-family: "Lekton", monospace;
 }
 .section{
 	padding-top: 0;
