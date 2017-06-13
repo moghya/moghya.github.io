@@ -22,14 +22,6 @@
 	margin-bottom:0px;
 }
 
-#image img{
-	width: 39.5%;
-	filter: grayscale(1);
-	border: solid white 3px;
-	margin-left: 30.25%;
-	margin-right: 30.25%;
-}
-
 #links img{	
 	width: 100%;
 	height: 100%;
@@ -52,38 +44,9 @@
 }
 
 #pageb .tabs{
-
 	background: none;
-
 }
 
-.tabs .tab a.active {
-	color: white;
-
-}
-
-.tabs .tab a{
-	color: white;
-}
-
-.tabs .tab a:hover{
-	color: white;
-}
-
-.tabs .indicator{
-	background-color: white;
-}
-
-body{
-	background-color: #1f1f1f;
-	/*background-image: url('../img/bg.png');*/
-	color: white;
-	font-family: "Lekton", monospace;
-}
-
-.type,.project, .education, .work{	
-	/*background-color: rgba(255,255,255,0.20);*/
-}
 
 .type.col.m4{
 	min-height: 200px;
@@ -96,33 +59,13 @@ body{
 	margin-bottom: 1%;
 }
 
-	
-.col.m6.s12.details{
-	border-left: solid white 2px;
-
-}
-
-a{
-	color: white;
-}
-
-
 #links .col.s2{
 	padding: 0;
-}
-
-
-
-blockquote{
-	border-left: 5px solid white;
-	text-align: justify;
 }
 
 .tag{
 	font-style: italic;
 }
-
-
 
 .ps.ps--active-x > .ps__scrollbar-x-rail, .ps.ps--active-y > .ps__scrollbar-y-rail{
 	background: none;
@@ -131,7 +74,6 @@ blockquote{
 .ps > .ps__scrollbar-y-rail > .ps__scrollbar-y{
 	background-color: rgba(255,255,255,0.20);
 }
-
 
 .tabs-content.carousel .carousel-item{
 	height:600px;
@@ -157,12 +99,6 @@ blockquote{
 }
 
 
-#moghyaSays{
-	display: none;
-    margin-top: 5%;
-    border-top: solid white 1px;
-}
-
 
 .collapsible-header,.collapsible-body{
 	background: none;
@@ -170,22 +106,12 @@ blockquote{
 	padding: 0;
 }
 
-button.confirm{
-	background-color: rgb(2,2,2);
-}
 
 .collapsible{
 	border: none;
 	box-shadow: none;
 }
 
-#skills svg path{
-	fill: rgba(255,255,255,1);
-}
-
-#links svg path{
-	fill: white;
-}
 
 #skills svg {
 
@@ -212,6 +138,64 @@ object{
 	text-align: center;
 	font-size: 10px;
 }
+
 #believe{
 	height: 10em;
+}
+
+
+
+
+
+
+
+
+#skills svg path{
+	fill: rgba(255,255,255,1);
+}
+
+
+#image img{
+	width: 39.5%;
+	filter: grayscale(1);
+	border: solid white 3px;
+	margin-left: 30.25%;
+	margin-right: 30.25%;
+}
+#links svg path{
+	fill: white;
+}
+#moghyaSays{
+	display: none;
+    margin-top: 5%;
+    border-top: solid white 1px;
+}
+.col.m6.s12.details{
+	border-left: solid white 2px;
+
+}
+
+a{
+	color: white;
+}
+.tabs .tab a.active {
+	color: white;
+}
+
+.tabs .tab a{
+	color: white;
+}
+
+.tabs .tab a:hover{
+	color: white;
+}
+
+.tabs .indicator{
+	background-color: white;
+}
+
+body{
+	background-color: #1f1f1f;
+	color: white;
+	font-family: "Lekton", monospace;
 }
