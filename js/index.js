@@ -18,6 +18,9 @@ function loadSkills(skills){
 }
 
 function loadProjects(projects){
+	projects.sort(function(a,b){
+		return a.sn-b.sn;
+	});
 	var i=0,j;
 	var projectsInnerHTML='';
 	for(i=0;i<projects.length;i++){					
