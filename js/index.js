@@ -89,7 +89,7 @@ function loadLikes(likes){
 		return a.sn-b.sn;
 	});
 	var i;
-	var likesInnerHTML = '<h4>I Like</h4>';
+	var likesInnerHTML = '<h4>I like</h4>';
 	for(i=0;i<likes.length;i++){
 		likesInnerHTML+='<object type="image/svg+xml" data="img/'+likes[i].icon+'">'+likes[i].name+'</object>'
 	}
@@ -113,6 +113,12 @@ $.get("js/profile.json",
 		$('#image img').attr('src','img/'+pInfo.myimg);
 		$('#contact').html('Call me:'+pInfo.mob+'</br> Mail me:'+pInfo.email);
 		$('#summary p').html(profile.summary);
+		Typed.new('#believe span', {
+			strings: profile.qoutes,
+			typeSpeed: 0,
+			cursorChar:"",
+			loop:true
+		});
 		loadLikes(profile.likes);
 		$('#helloText').html(profile.helloText);
 		loadLinks(profile.profileLinks);
@@ -136,16 +142,6 @@ $(document).ready(function(){
 });
 		
 $(window).resize(onWindowResize);	
-
-document.addEventListener('DOMContentLoaded', function(){
-      Typed.new('.hello', {
-        strings: ["First sentence.</br>Second sentence", "Third sentence.</br>Fourth sentence"],
-        typeSpeed: 0,
-        cursorChar:"",
-        loop:true
-      });
-  });
-
 
 function onWindowResize(){
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
