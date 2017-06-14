@@ -173,6 +173,7 @@ a{
 }
 .tabs .tab a.active {
 	color: white;
+	opacity: 1;
 }
 
 .tabs .tab a{

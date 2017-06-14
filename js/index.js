@@ -42,10 +42,13 @@ function loadProjects(projects){
 }
 
 function loadWorks(works){
+	works.sort(function(a,b){
+		return a.sn-b.sn;
+	});
 	var i;
 	var worksInnerHTML = '';
 	for(i=0;i<works.length;i++){
-		worksInnerHTML+='<div class="row work"><div class="col m6 s12"><div class="row title">'+works[i].workPosition+'<hr></div><div class="row">'+ works[i].periodStart+ '-' + works[i].periodEnd +'</div><div class="row">'+works[i].organisation+'</div></div><div class="col m6 s12 details"><div class="row">'+works[i].experience+'</div></div></div>';
+		worksInnerHTML+='<div class="row work"><div class="col m6 s12"><div class="row title">'+works[i].workPosition+'<hr></div><div class="row">'+ works[i].periodStart+ '-' + works[i].periodEnd +'</div><div class="row"><a href="'+works[i].link+'">'+works[i].organisation+'</a></div></div><div class="col m6 s12 details"><div class="row">'+works[i].experience+'</div></div></div>';
 	}
 	$('#experience').html(worksInnerHTML);
 }
