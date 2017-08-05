@@ -141,9 +141,7 @@ function onBodyLoad(){
 }
 
 $(document).ready(function(){
-	$('.collapsible').collapsible({
-	  accordion : true
-	});
+
 	$('#tabs').tabs({ 'swipeable': true });
 	$('.info').perfectScrollbar();
 	onWindowResize();
