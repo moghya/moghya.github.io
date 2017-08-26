@@ -82,13 +82,10 @@
 
 
 .tabs .tab a{
-	opacity: 0.2;
-}
-
-
-.tabs:hover a{
 	opacity: 1;
 }
+
+
 
 
 #skills .m2{
