@@ -428,7 +428,7 @@
 		{
 			"sn":3,"link":"http://wcepace.in/","workPosition": "Cheif. Skills Developer",
 			"periodStart": "January 2017",
-			"periodEnd": "Present",
+			"periodEnd": "December 2017",
 			"organisation": "Personality Advancement Circle of Engineers.",
 			"experience": "Good to arrange Meet ups for professional skill development of fellow PACErs."
 		},
@@ -442,7 +442,7 @@
 		{
 			"sn":1,"link":"http://www.praxisinfotech.com/","workPosition": "Web Development Intern",
 			"periodStart": "June 2017",
-			"periodEnd": "Present",
+			"periodEnd": "July 2017",
 			"organisation": "Praxis Infotech ",
 			"experience": "Joined Praxis under TIFAC scheme. Working on a business app using goole map apis."
 		}
@@ -510,7 +510,7 @@
 			"toolsUsed": ["python","scikit-learn","ipynb","graph-api"],
 			"tags": ["machine-learning","regression","python"],
 			"shortInfo": "Choosing optimal location for business using data from social media websites contribute largely to the profit.Our System helps business choose optimal location for higher number of check-ins .indirectly helping businesses to increase their profits.We have used to machine learning techniques to help improve our system.",
-			"link":""
+			"link":"https://github.com/moghya/Stratergic-Location"
 		},
 		{
 			"sn":2, "projectTitle": "prowessIndex",
