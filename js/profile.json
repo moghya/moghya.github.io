@@ -19,7 +19,7 @@
 			"periodStart": "July 2014",
 			"periodEnd": "May 2018",
 			"course": "B.Tech Information Technology",
-			"score": "7.36 CGPA",
+			"score": "7.59 CGPA",
 			"inst": "Walchand College of Engineering, Sangli",
 			"board": "Shivaji University",
 			"courses": [
@@ -445,6 +445,13 @@
 			"periodEnd": "July 2017",
 			"organisation": "Praxis Infotech ",
 			"experience": "Joined Praxis under TIFAC scheme. Working on a business app using goole map apis."
+		},
+		{
+			"sn":0,"link":"https://www.media.net/","workPosition": "Application Engineer",
+			"periodStart": "July 2018",
+			"periodEnd": "Present",
+			"organisation": "Media.Net",
+			"experience": "I have joined Media.Net and work as Application Engineer in Optimization Team."
 		}
 	],
 	"projects":[
