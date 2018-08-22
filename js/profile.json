@@ -433,7 +433,7 @@
 			"experience": "Good to arrange Meet ups for professional skill development of fellow PACErs."
 		},
 		{
-			"sn":2,"link":"http://pitchteq.com/","workPosition": "Lead PHP Developer",
+			"sn":2,"link":"http://pitchteq.com/","workPosition": "PHP Developer",
 			"periodStart": "July 2016",
 			"periodEnd": "Present",
 			"organisation": "PitchTeQ ",
@@ -451,7 +451,7 @@
 			"periodStart": "July 2018",
 			"periodEnd": "Present",
 			"organisation": "Media.Net",
-			"experience": "I have joined Media.Net and work as Application Engineer in Optimization Team."
+			"experience": "I have joined Media.Net and work as Application Engineer in Email Monetization Team."
 		}
 	],
 	"projects":[
@@ -700,6 +700,7 @@
 
 	],
 	"qoutes": [
+		"Every day every hour turn the pain into power.",
 		"If you cannot be a pencil to write someone's happiness, then try to be an erases to erase someone's sorrows.",
 		"Tabs are better than spaces."
 	],
