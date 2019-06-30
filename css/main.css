@@ -76,7 +76,7 @@
 }
 
 .tabs-content.carousel .carousel-item{
-	height:600px;
+	height: 100%;
 	overflow-y: scroll;
 }
 
