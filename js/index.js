@@ -152,6 +152,7 @@ $(document).ready(function(){
 $(window).resize(onWindowResize);	
 
 function onWindowResize(){
+	document.getElementsByClassName('tabs-content carousel initialized')[0].style.height = (window.innerHeight - 60) + 'px';
 	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
 	$('#image img').css('height',$('#image img').css('width'));
 }
