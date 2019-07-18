@@ -1,6 +1,15 @@
-/* .row.content {
+div.content {
 	display: none;
-} */
+}
+
+.progress {
+	background-color: white;
+	margin: 25% 0 0 0;
+}
+
+.progress .indeterminate {
+    background-color: #1f1f1f;
+}
 
 #name{
 	font-size:  2.5rem;
