@@ -1,12 +1,14 @@
+.row.content {
+	display: none;
+}
 #name{
-	font-size:  1.5rem;
-	text-transform: uppercase;
-	font-family: 'Kaushan Script' , sans-serif;
+	font-size:  2.5rem;
+	font-weight: bold;
 }
 
 .title{
-	font-family: 'Kaushan Script' , sans-serif;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 #name sub{
@@ -30,8 +32,8 @@
 }
 
 #links .s2{
-	width: 18%;
-	margin: 1%;
+	width: 16%;
+	margin: 2%;
 }
 
 .section{
@@ -85,17 +87,13 @@
 	opacity: 1;
 }
 
-
-
-
 #skills .m2{
 	width: 14.666%;
 	margin: 1%;
 	padding: 2%;
 	border-radius: 50%;
+	font-size: 1.15rem;
 }
-
-
 
 .collapsible-header,.collapsible-body{
 	background: none;
@@ -111,10 +109,8 @@
 
 
 #skills svg {
-
 	height: 100%;
 	width: 100%;
-
 }
 
 .education.col.s12, .work.col.s12{
@@ -152,21 +148,24 @@ object{
 	margin-left: 30.25%;
 	margin-right: 30.25%;
 }
+
 #links svg path{
 	fill: white;
 }
-#moghyaSays{
-	display: none;
-    margin-top: 5%;
-    border-top: solid white 1px;
-}
-.col.m6.s12.details{
-	border-left: solid white 2px;
 
+#moghyaSays{
+	border-top: solid white 1px;
+	font-size: 1rem;
+	margin-top: 5%
+}
+
+.details{
+	text-align: justify;
+	padding-left: 2%;
 }
 
 a{
-	color: white;
+	color: green;
 }
 .tabs .tab a.active {
 	color: white;
@@ -189,4 +188,32 @@ body{
 	background-color: #1f1f1f;
 	color: white;
 	font-family: "Lekton", monospace;
+	font-size: 1.15rem;
+	font-display: auto;
+}
+
+h6 {
+	font-size: 1.15rem;
+}
+
+
+.swal-button {
+	color: white;
+	background-color: #1f1f1f;
+	box-shadow: none !important;
+	text-align: justify;
+}
+
+button:focus {
+	color: white !important;
+	background-color: #1f1f1f !important;
+}
+
+button:hover {
+	color: white !important;
+	background-color: #1f1f1f !important;
+}
+
+.swal-button-container {
+	display: inline;
 }
