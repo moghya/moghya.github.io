@@ -122,8 +122,8 @@ function loadBlog() {
 
 function onBodyLoad(){
 	console.log('body loaded called');
-	$('div.progress').css('display','none');
-	$('div.content').css('display','block');
+	// $('div.progress').css('display','none');
+	// $('div.content').css('display','block');
 	onWindowResize();
 }
 
