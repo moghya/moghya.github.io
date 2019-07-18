@@ -122,8 +122,12 @@ function loadBlog() {
 
 function onBodyLoad(){
 	console.log('body loaded called');
-	// $('div.progress').css('display','none');
-	// $('div.content').css('display','block');
+	$('div.progress').css('display','none');
+	$('div.content').css('display','block');
+	$('.collapsible').collapsible({
+		'accordion' : true
+	});
+	$('#tabs').tabs({ 'swipeable': true });
 	onWindowResize();
 }
 
@@ -142,14 +146,6 @@ function onWindowResize(){
 
 $(window).resize(onWindowResize);
 
-$(document).ready(function(){
-	$('.collapsible').collapsible({
-	  'accordion' : true
-	});
-	$('#tabs').tabs({ 'swipeable': true });
-	onWindowResize();
-});
-
 var profile;
 swal({
 		title: "Hello World!!!",
@@ -157,14 +153,14 @@ swal({
 		// buttons: ["Nope, I'm just looking around.", "Yes, I'm hiring :)"]
 		buttons: {
 			cancel: {
-			  text: "Nope, I'm just looking around.",
+			  text: "Nope.",
 			  value: false,
 			  visible: true,
 			  className: "button-cancel",
 			  closeModal: true,
 			},
 			confirm: {
-			  text: "Yes, I'm hiring",
+			  text: "Yes, I'm hiring.",
 			  value: true,
 			  visible: true,
 			  className: "button-confirm",
@@ -175,7 +171,7 @@ swal({
 	if(value===true) {
 		swal({
 			title: "Hello Talent Scout,",
-			text: "Thank you for visiting my webspace. I hope you'll find relevant information here. If you need any other information, kindly reach to me. \n\n Would you like to download a copy of my resume?",
+			text: "Thank you for visiting my webspace. I hope you'll find relevant information here. If you need any other information, kindly reach to me. \n\n Do you need a copy of my resume?",
 			buttons: {
 				cancel: {
 				  text: "I have your resume.",
@@ -228,6 +224,4 @@ $.get("js/profile.json",
 		loadEducations(profile.educations);
 		console.log('body loaded calling');
 		onBodyLoad();
-		// loadBlog();
-		// console.log(profile);
 });
