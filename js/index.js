@@ -33,7 +33,8 @@ function loadProjects(projects){
 		project+=toolsUsed;
 		tags = '<div class=row">'
 		for(j=0;j<projects[i].tags.length;j++)tags+='<span class="tag">#'+projects[i].tags[j]+'</span>&nbsp';
-		tags+='<a href="'+projects[i].link+'" target="_blank"><i class="material-icons right">language</i></a></div>';
+		if(projects[i].link!="#") tags+='<a href="'+projects[i].link+'" target="_blank"><i class="material-icons right">language</i></a>';
+		tags+='</div>';
 		project+=tags;
 		project+='</div><div class="col m6 s12 details">'+projects[i].shortInfo+'</div></div>';
 		projectsInnerHTML+=project;
@@ -41,14 +42,26 @@ function loadProjects(projects){
 	$('#projects').html(projectsInnerHTML);
 }
 
-function loadWorks(works){
-	works.sort(function(a,b){
+function loadWorks(experince){
+	experince.sort(function(a,b){
 		return a.sn-b.sn;
 	});
 	var i;
+	var works = experince.filter((experince)=>experince.type=="work");
 	var worksInnerHTML = '';
 	for(i=0;i<works.length;i++){
-		worksInnerHTML+='<div class="row work"><div class="col m6 s12"><div class="row title">'+works[i].workPosition+'<hr></div><div class="row">'+ works[i].periodStart+ '-' + works[i].periodEnd +'</div><div class="row"><a href="'+works[i].link+'">'+works[i].organisation+'</a></div></div><div class="col m6 s12 details"><div class="row">'+works[i].experience+'</div></div></div>';
+		worksInnerHTML+=`
+		<div class="row work">
+			<div class="row title">
+				<a href="${works[i].link}">${works[i].organisation}</a> |
+				${works[i].workPosition} |
+				${works[i].periodStart} - ${works[i].periodEnd}
+			</div>
+			<hr/>
+			<div class="row details">
+				${works[i].experience}
+			</div>
+		</div>`;
 	}
 	$('#experience').html(worksInnerHTML);
 }
@@ -102,27 +115,108 @@ function loadLikes(likes){
 	$('#likes').html(likesInnerHTML);
 }
 
+function loadBlog() {
+	var blogHtml = `<div class='sk-ww-medium-publication-feed' data-embed-id='26322'></div><script src='https://www.sociablekit.com/app/embed/medium-publication-feed/widget.js'></script>`;
+	$('#blog').html(blogHtml);	
+}
+
+function onBodyLoad(){
+	console.log('body loaded called');
+	$('div.progress').css('display','none');
+	$('div.content').css('display','block');
+	onWindowResize();
+}
+
+function onWindowResize(){
+	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
+	const tabContentHeight = Math.max(heightPageA-48,(window.innerHeight - 50)) + 'px';
+	// console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
+	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
+	if (tabs && tabs[0]) {
+		tabs[0].style.height = tabContentHeight;
+	}
+	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
+	$('#image img').css('height',$('#image img').css('width'));
+}
+
+
+$(window).resize(onWindowResize);
+
+$(document).ready(function(){
+	$('.collapsible').collapsible({
+	  'accordion' : true
+	});
+	$('#tabs').tabs({ 'swipeable': true });
+	onWindowResize();
+});
+
 var profile;
-	swal(
-		{
-			title:"helloWorld!!!",
-			text:"Hello visitor, you have landed upon little webspace of moghya.",
-			confirmButtonColor:"#1f1f1f"
+swal({
+		title: "Hello World!!!",
+		text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well. \n\n I'm actively looking for new SDE role opportunities. Are you hiring? ",
+		// buttons: ["Nope, I'm just looking around.", "Yes, I'm hiring :)"]
+		buttons: {
+			cancel: {
+			  text: "Nope, I'm just looking around.",
+			  value: false,
+			  visible: true,
+			  className: "button-cancel",
+			  closeModal: true,
+			},
+			confirm: {
+			  text: "Yes, I'm hiring",
+			  value: true,
+			  visible: true,
+			  className: "button-confirm",
+			  closeModal: true
+			}
 		}
-	);
+}).then((value)=>{
+	if(value===true) {
+		swal({
+			title: "Hello Talent Scout,",
+			text: "Thank you for visiting my webspace. I hope you'll find relevant information here. If you need any other information, kindly reach to me. \n\n Would you like to download a copy of my resume?",
+			buttons: {
+				cancel: {
+				  text: "I have your resume.",
+				  value: false,
+				  visible: true,
+				  className: "button-cancel",
+				  closeModal: true,
+				},
+				confirm: {
+				  text: "Yes, sure.",
+				  value: true,
+				  visible: true,
+				  className: "button-confirm",
+				  closeModal: true
+				}
+			}
+		}).then((value)=>{
+			if(value===true) { 
+				window.open('/resume.pdf');
+			}
+		})
+	}
+});
+
 $.get("js/profile.json", 
 	function(data, status){
+		console.log('Got profile:',data,' \nwith status:',status);
+		if(status!=="success") {
+			window.location.href = "/error.html";
+		}
 		profile = data;
 		var pInfo = profile.personalInfo;
 		$('title').html(pInfo.nick+'|Portfolio');
 		$('#name').html(pInfo.fname+' '+pInfo.lname+'<sub>&lt'+pInfo.nick+'/&gt</sub>');
 		$('#image img').attr('src','img/'+pInfo.myimg);
-		$('#contact').html('Call me:'+pInfo.mob+'</br> Mail me:'+pInfo.email);
-		$('#summary p').html(profile.summary);
-		Typed.new('#believe span', {
+		$('#contact').html(pInfo.mob+'</br>'+pInfo.email);
+		$('#summary').html(profile.summary);
+		const typed = new Typed('#believe span', {
 			strings: profile.qoutes,
-			typeSpeed: 0,
-			cursorChar:"",
+			typeSpeed: 40,
+			cursorChar:"_",
 			loop:true
 		});
 		loadLikes(profile.likes);
@@ -130,29 +224,10 @@ $.get("js/profile.json",
 		loadLinks(profile.profileLinks);
 		loadSkills(profile.skills);
 		loadProjects(profile.projects);
-		loadWorks(profile.works);
+		loadWorks(profile.experince);
 		loadEducations(profile.educations);
-		console.log(profile);
+		console.log('body loaded calling');
+		onBodyLoad();
+		// loadBlog();
+		// console.log(profile);
 });
-
-function onBodyLoad(){
-	console.log('body loaded');
-	$('#moghyaSays').css('display','block');
-}
-
-$(document).ready(function(){
-	$('.collapsible').collapsible({
-	  'accordion' : true
-	});
-	$('#tabs').tabs({ 'swipeable': true });
-	$('.info').perfectScrollbar();
-	onWindowResize();
-});
-		
-$(window).resize(onWindowResize);	
-
-function onWindowResize(){
-	document.getElementsByClassName('tabs-content carousel initialized')[0].style.height = (window.innerHeight - 60) + 'px';
-	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
-	$('#image img').css('height',$('#image img').css('width'));
-}
