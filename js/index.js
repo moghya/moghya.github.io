@@ -149,52 +149,53 @@ $(window).resize(onWindowResize);
 var profile;
 swal({
 		title: "Hello World!!!",
-		text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well. \n\n I'm actively looking for new SDE role opportunities. Are you hiring? ",
+		text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well."
 		// buttons: ["Nope, I'm just looking around.", "Yes, I'm hiring :)"]
-		buttons: {
-			cancel: {
-			  text: "Nope.",
-			  value: false,
-			  visible: true,
-			  className: "button-cancel",
-			  closeModal: true,
-			},
-			confirm: {
-			  text: "Yes, I'm hiring.",
-			  value: true,
-			  visible: true,
-			  className: "button-confirm",
-			  closeModal: true
-			}
-		}
-}).then((value)=>{
-	if(value===true) {
-		swal({
-			title: "Hello Talent Scout,",
-			text: "Thank you for visiting my webspace. I hope you'll find relevant information here. If you need any other information, kindly reach to me. \n\n Do you need a copy of my resume?",
-			buttons: {
-				cancel: {
-				  text: "I have your resume.",
-				  value: false,
-				  visible: true,
-				  className: "button-cancel",
-				  closeModal: true,
-				},
-				confirm: {
-				  text: "Yes, sure.",
-				  value: true,
-				  visible: true,
-				  className: "button-confirm",
-				  closeModal: true
-				}
-			}
-		}).then((value)=>{
-			if(value===true) { 
-				window.open('/Resume_Shubham_Sawant.pdf');
-			}
-		})
-	}
+		// buttons: {
+		// 	cancel: {
+		// 	  text: "Nope.",
+		// 	  value: false,
+		// 	  visible: true,
+		// 	  className: "button-cancel",
+		// 	  closeModal: true,
+		// 	},
+		// 	confirm: {
+		// 	  text: "Yes, I'm hiring.",
+		// 	  value: true,
+		// 	  visible: true,
+		// 	  className: "button-confirm",
+		// 	  closeModal: true
+		// 	}
+		// }
 });
+//.then((value)=>{
+// 	if(value===true) {
+// 		swal({
+// 			title: "Hello Talent Scout,",
+// 			text: "Thank you for visiting my webspace. I hope you'll find relevant information here. If you need any other information, kindly reach to me. \n\n Do you need a copy of my resume?",
+// 			buttons: {
+// 				cancel: {
+// 				  text: "I have your resume.",
+// 				  value: false,
+// 				  visible: true,
+// 				  className: "button-cancel",
+// 				  closeModal: true,
+// 				},
+// 				confirm: {
+// 				  text: "Yes, sure.",
+// 				  value: true,
+// 				  visible: true,
+// 				  className: "button-confirm",
+// 				  closeModal: true
+// 				}
+// 			}
+// 		}).then((value)=>{
+// 			if(value===true) { 
+// 				window.open('/Resume_Shubham_Sawant.pdf');
+// 			}
+// 		})
+// 	}
+// });
 
 
 function loadMoghysSays() {
