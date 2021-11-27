@@ -12,12 +12,12 @@
       ]
     },
     "email": "sawantshubham571@gmail.com",
-    "mob": "+91 0000 000 000"
+    "mob": "+91 9881 464 434 | +49 1721 457 523"
   },
   "educations": [
     {
-      "periodStart": "July 2014",
-      "periodEnd": "May 2018",
+      "periodStart": "Jul'14",
+      "periodEnd": "May'18",
       "course": "B.Tech Information Technology",
       "score": "7.59 CGPA",
       "inst": "Walchand College of Engineering, Sangli",
@@ -230,8 +230,8 @@
       ]
     },
     {
-      "periodStart": "April 2013",
-      "periodEnd": "May 2014",
+      "periodStart": "Apr'13",
+      "periodEnd": "May'14",
       "course": "All India Senior School Examination",
       "score": "89.4%",
       "inst": "Jawahar Navodaya Vidyalaya,Washim",
@@ -264,8 +264,8 @@
       ]
     },
     {
-      "periodStart": "April 2011",
-      "periodEnd": "May 2012",
+      "periodStart": "April'11",
+      "periodEnd": "May'12",
       "course": "All India Secondary School Examination",
       "score": "10.00 CGPA",
       "inst": "Jawahar Navodaya Vidyalaya,Washim",
@@ -373,8 +373,8 @@
       "sn": 6,
       "link": "",
       "workPosition": "Scout Troop Leader",
-      "periodStart": "April 2010",
-      "periodEnd": "May 2012",
+      "periodStart": "April'10",
+      "periodEnd": "May'12",
       "organisation": "JNV,Washim",
       "experience": "It was nice to be a part of Scouting.Arranged camps,hikes and awareness rallies.",
       "type": "volunteer"
@@ -383,8 +383,8 @@
       "sn": 5,
       "link": "http://wcepace.in/",
       "workPosition": "Asst. Program Director in Events",
-      "periodStart": "April 2015",
-      "periodEnd": "March 2016",
+      "periodStart": "Apr'15",
+      "periodEnd": "Mar'16",
       "organisation": "Personality Advancement Circle of Engineers.",
       "experience": "Learnt how to organize professional events and actvites, how to manage resources and make most out of everything.",
       "type": "volunteer"
@@ -393,8 +393,8 @@
       "sn": 4,
       "link": "http://wcepace.in/",
       "workPosition": "Joint. Skills Developer",
-      "periodStart": "April 2016",
-      "periodEnd": "January 2017",
+      "periodStart": "Apr'16",
+      "periodEnd": "Jan'17",
       "organisation": "Personality Advancement Circle of Engineers.",
       "experience": "Good to arrange Meet ups for professional skill development of fellow PACErs.",
       "type": "volunteer"
@@ -403,8 +403,8 @@
       "sn": 3,
       "link": "http://wcepace.in/",
       "workPosition": "Cheif. Skills Developer",
-      "periodStart": "January 2017",
-      "periodEnd": "December 2017",
+      "periodStart": "Jan'17",
+      "periodEnd": "Dec'17",
       "organisation": "Personality Advancement Circle of Engineers.",
       "experience": "Good to arrange Meet ups for professional skill development of fellow PACErs.",
       "type": "volunteer"
@@ -413,8 +413,8 @@
       "sn": 2,
       "link": "http://pitchteq.com/",
       "workPosition": "PHP Developer",
-      "periodStart": "July 2016",
-      "periodEnd": "July 2018",
+      "periodStart": "Jul'16",
+      "periodEnd": "Jul'18",
       "organisation": "PitchTeQ ",
       "experience": "A group of college students established a web solutions startup. Worked on an e-commerce project.",
       "type": "work"
@@ -423,8 +423,8 @@
       "sn": 1,
       "link": "http://www.praxisinfotech.com/",
       "workPosition": "Web Development Intern",
-      "periodStart": "June 2017",
-      "periodEnd": "July 2017",
+      "periodStart": "Jun'17",
+      "periodEnd": "Jul'17",
       "organisation": "Praxis Infotech ",
       "experience": "Developed a PHP, MySQL web application. Added a layer on top of Google maps for places and events.",
       "type": "work"
@@ -433,18 +433,20 @@
       "sn": 0,
       "link": "https://www.media.net/",
       "workPosition": "Software Development Engineer",
-      "periodStart": "July 2018",
-      "periodEnd": "Feb 2020",
+      "periodStart": "Jul'18",
+      "periodEnd": "Feb'20",
       "organisation": "Media.Net",
       "experience": "<ul><li>Involved in designing, developing features and parts of an App Distribution platform.</li><li>Majorly my work involves:</li><ul><li>– Designing, writing and consuming HTTP-REST APIs.</li><li>– Setting up job queues for multiple monitoring tasks.</li><li>– Writing template code for full-stack Web and Desktop applications.</li><li>– Automating and setting up application build processes.</li><li>– Extensive research and POC creation of features,solutions for novel business requirements.</li><li>– Identifying bottlenecks across system and optimize database queries, page load time, serving time, build time.</li></ul><li>Developed node-js, python back-end applications for automating and monitoring application build processes.</li><li>Developed node-js module for restructuring and renaming directory tree, handled resolution of interlinked file-paths in files.</li><li>Developed macOs desktop application(A Safari App Extension) using Swift for search monetization with app installer and app auto update feature from scratch</li></ul>",
-      "type": "work"
+      "type": "work",
+      "status": "Fulltime",
+      "location": "Mumbai, India"
     },
     {
       "sn": -1,
       "link": "https://www.cohesity.com",
-      "workPosition": "Member of Technical Staff",
-      "periodStart": "Feb 2020",
-      "periodEnd": "Present",
+      "workPosition": "Member of Technical Staff 3",
+      "periodStart": "Feb'20",
+      "periodEnd": "Aug'21",
       "organisation": "Cohesity",
       "experience": "<ul><li>\nDevelopingdistributedsystemsoftwareusingC++,Golangfordataprotection.</li></ul>",
       "type": "work"
@@ -454,8 +456,8 @@
     {
       "sn": 14,
       "projectTitle": "Traffic Rules",
-      "periodStart": "July 2015",
-      "periodEnd": "Nov 2015",
+      "periodStart": "Jul'15",
+      "periodEnd": "Nov'15",
       "toolsUsed": [
         "Blender",
         "Movie Maker"
@@ -472,8 +474,8 @@
     {
       "sn": 13,
       "projectTitle": "Smart Hospital Management",
-      "periodStart": "Aug 2015",
-      "periodEnd": "Sep 2015",
+      "periodStart": "Aug'15",
+      "periodEnd": "Sep'15",
       "toolsUsed": [
         "c++",
         "qt"
@@ -491,8 +493,8 @@
     {
       "sn": 12,
       "projectTitle": "Seat Allocation",
-      "periodStart": "Dec 2015",
-      "periodEnd": "Dec 2015",
+      "periodStart": "Dec'15",
+      "periodEnd": "Dec'15",
       "toolsUsed": [
         "c++"
       ],
@@ -508,8 +510,8 @@
     {
       "sn": 11,
       "projectTitle": "Online External Examination Portal",
-      "periodStart": "Feb 2016",
-      "periodEnd": "May 2016",
+      "periodStart": "Feb'16",
+      "periodEnd": "May'16",
       "toolsUsed": [
         "php",
         "js",
@@ -530,8 +532,8 @@
     {
       "sn": 9,
       "projectTitle": "LookIn",
-      "periodStart": "Mar 2016",
-      "periodEnd": "May 2016",
+      "periodStart": "Mar'16",
+      "periodEnd": "May'16",
       "toolsUsed": [
         "python",
         "sqllite3",
@@ -550,7 +552,7 @@
     {
       "sn": 3,
       "projectTitle": "dsalglib ",
-      "periodStart": "May 2016",
+      "periodStart": "May'16",
       "periodEnd": "Present",
       "toolsUsed": [
         "c++"
@@ -567,8 +569,8 @@
     {
       "sn": 1,
       "projectTitle": "Strategic Location using Facebook Data",
-      "periodStart": "Dec 2016",
-      "periodEnd": "Dec 2016",
+      "periodStart": "Dec'16",
+      "periodEnd": "Dec'16",
       "toolsUsed": [
         "python",
         "scikit-learn",
@@ -586,8 +588,8 @@
     {
       "sn": 2,
       "projectTitle": "prowessIndex",
-      "periodStart": "June 2017",
-      "periodEnd": "June 2017",
+      "periodStart": "Jun'17",
+      "periodEnd": "Jun'17",
       "toolsUsed": [
         "python",
         "flask",
@@ -603,8 +605,8 @@
     {
       "sn": 7,
       "projectTitle": "FollowScreen",
-      "periodStart": "Jul 2016",
-      "periodEnd": "Jul 2016",
+      "periodStart": "Jul'16",
+      "periodEnd": "Jul'16",
       "toolsUsed": [
         "python",
         "pyautogui",
@@ -621,8 +623,8 @@
     {
       "sn": 8,
       "projectTitle": "Digital Library Portal",
-      "periodStart": "Feb 2017",
-      "periodEnd": "May 2017",
+      "periodStart": "Feb'17",
+      "periodEnd": "May'17",
       "toolsUsed": [
         "QuilJs",
         "php",
@@ -642,8 +644,8 @@
     {
       "sn": 5,
       "projectTitle": "Book Bank Allotment System",
-      "periodStart": "Jan 2017",
-      "periodEnd": "May 2017",
+      "periodStart": "Jan'17",
+      "periodEnd": "May'17",
       "toolsUsed": [
         "php",
         "mongodb",
@@ -660,8 +662,8 @@
     {
       "sn": 4,
       "projectTitle": "Detection and Prevention of Black hole Attack in MANET",
-      "periodStart": "Jul 2016",
-      "periodEnd": "Nov 2016",
+      "periodStart": "Jul'16",
+      "periodEnd": "Nov'16",
       "toolsUsed": [
         "c++",
         "ns2",
@@ -679,8 +681,8 @@
     {
       "sn": 10,
       "projectTitle": "JNV Washim Alumni Portal",
-      "periodStart": "Dec 2015",
-      "periodEnd": "Jan 2016",
+      "periodStart": "Dec'15",
+      "periodEnd": "Jan'16",
       "toolsUsed": [
         "php",
         "mysql",
@@ -698,7 +700,7 @@
     {
       "sn": 6,
       "projectTitle": "toGithub",
-      "periodStart": "May 2017",
+      "periodStart": "May'17",
       "periodEnd": "Present",
       "toolsUsed": [
         "python",
@@ -725,7 +727,7 @@
     {
       "name": "LinkedIn",
       "icon": "linkedin.svg",
-      "link": "https://www.linkedin.com/in/shubham-sawant-67074a86/",
+      "link": "https://www.linkedin.com/in/moghya",
       "sn": 1
     },
     {

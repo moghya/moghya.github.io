@@ -19,6 +19,24 @@ div.content {
 .title{
 	font-size: 1.5rem;
 	font-weight: bold;
+	/* color: #01a252; */
+	color: teal;
+}
+
+.position {
+	text-align: right;
+}
+
+.project .col {
+	padding: 0;
+}
+
+.work .col {
+	padding: 0;
+}
+
+.education .col {
+	padding: 0;
 }
 
 #name sub{
@@ -26,7 +44,7 @@ div.content {
 	text-transform: lowercase;
 }
 
-#hello p,#summary p{
+.content-text {
 	text-align: justify;
 }
 
@@ -34,38 +52,28 @@ div.content {
 	margin-bottom:0px;
 }
 
-#links img{	
-	width: 100%;
-	height: 100%;
-	filter: grayscale(1);
-	border-radius: 50%;
-}
-
-#links .s2{
-	width: 16%;
-	margin: 2%;
-}
-
 .section{
 	padding-top: 0;
 	padding-bottom: 0.5rem;
 }
 
-.info{
-	height: 100%;
+.page {
+	max-width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
-#pageb .tabs{
-	background: none;
+hr {
+	max-width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
 }
-
 
 .type.col.m4{
 	min-height: 200px;
 }
 
 .row.project,.row.education,.row.work{
-
 	padding: 2%;
 	margin-top: 1%;
 	margin-bottom: 1%;
@@ -75,26 +83,22 @@ div.content {
 	padding: 0;
 }
 
-.tag{
+.tag {
 	font-style: italic;
 }
 
-.ps.ps--active-x > .ps__scrollbar-x-rail, .ps.ps--active-y > .ps__scrollbar-y-rail{
-	background: none;
+#tabs {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	width: 25%;
 }
 
-.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y{
-	background-color: rgba(255,255,255,0.20);
-}
-
-.tabs-content.carousel .carousel-item{
-	height: 100%;
-	overflow-y: scroll;
-}
-
-
-.tabs .tab a{
+#tabs a{
 	opacity: 1;
+	display: block;
+	margin-left: 10%;
 }
 
 #skills .m2{
@@ -103,6 +107,7 @@ div.content {
 	padding: 2%;
 	border-radius: 50%;
 	font-size: 1.15rem;
+	text-align: center;
 }
 
 .collapsible-header,.collapsible-body{
@@ -115,12 +120,6 @@ div.content {
 .collapsible{
 	border: none;
 	box-shadow: none;
-}
-
-
-#skills svg {
-	height: 100%;
-	width: 100%;
 }
 
 .education.col.s12, .work.col.s12{
@@ -137,66 +136,37 @@ object{
 	text-align: center;
 }
 
-#skills{
-	text-align: center;
-	font-size: 10px;
-}
-
-#believe{
-	height: 10em;
-}
-
-#skills svg path{
-	fill: rgba(255,255,255,1);
-}
-
-
-#image img{
-	width: 39.5%;
-	filter: grayscale(1);
-	border: solid white 3px;
-	margin-left: 30.25%;
-	margin-right: 30.25%;
-}
-
-#links svg path{
-	fill: white;
-}
-
 #moghyaSays{
-	border-top: solid white 1px;
 	font-size: 1rem;
-	margin-top: 5%
 }
 
 .details{
 	text-align: justify;
-	padding-left: 2%;
+}
+
+.period {
+	text-align: right;
+}
+
+.golden {
+	color: #d3a04d;
+	background-color: none;
+}
+
+.score {
+	text-align: right;
 }
 
 a{
 	color: green;
 }
-.tabs .tab a.active {
-	color: white;
-	opacity: 1;
-}
 
-.tabs .tab a{
-	color: white;
-}
-
-.tabs .tab a:hover{
-	color: white;
-}
-
-.tabs .indicator{
-	background-color: white;
-}
+*{scroll-behavior: smooth;}
 
 body{
-	background-color: #1f1f1f;
-	color: white;
+	background-color: #1f1f1d;
+	/* background-color: #646464; */
+	color: #b6b6b6;
 	font-family: "Lekton", monospace;
 	font-size: 1.15rem;
 	font-display: auto;

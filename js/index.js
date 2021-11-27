@@ -5,7 +5,7 @@ function loadSkills(skills){
 
 			var row = '<div class="row">';
 			for(j=i;j<i+6&&j<skills.length;j++){
-				var skill = '<div class="col m2"><svg viewBox="0 0 128 128"><path d="'+skills[j].icon+'"></path></svg>'+skills[j].name+'</div>';
+				var skill = '<div class="col m2 s2"><svg viewBox="0 0 128 128"><path d="'+skills[j].icon+'"></path></svg><span>'+skills[j].name+'</span></div>';
 				row+=skill;
 				
 			}
@@ -14,7 +14,7 @@ function loadSkills(skills){
 			
 			i=j;
 		}
-		$('#skills').html(skillsInnerHTML);
+		$('#skills').html(`<div class="row section"><h4>Skills</h4>${skillsInnerHTML}</div>`);
 }
 
 function loadProjects(projects){
@@ -23,23 +23,27 @@ function loadProjects(projects){
 	});
 	var i=0,j;
 	var projectsInnerHTML='';
-	for(i=0;i<projects.length;i++){					
-		project = ' <div class="row project"><div class="col m6 s12"><div class="row"><span class="title">'+projects[i].projectTitle+'</span><hr></div><div class="row"><span>'+projects[i].periodStart+'-'+projects[i].periodEnd+'</span></div>';
-		toolsUsed = '<div class="row">Tools Used:&nbsp';
+	for(i=0;i<projects.length;i++){
+		toolsUsed = ``;
 		for(j=0;j<projects[i].toolsUsed.length;j++){
-			toolsUsed+='<span>'+projects[i].toolsUsed[j]+'</span>&nbsp';
+			toolsUsed+='<span><i>'+projects[i].toolsUsed[j]+'</i></span>&nbsp';
 		}
-		toolsUsed+='</div>';
-		project+=toolsUsed;
-		tags = '<div class=row">'
-		for(j=0;j<projects[i].tags.length;j++)tags+='<span class="tag">#'+projects[i].tags[j]+'</span>&nbsp';
-		if(projects[i].link!="#") tags+='<a href="'+projects[i].link+'" target="_blank"><i class="material-icons right">language</i></a>';
-		tags+='</div>';
-		project+=tags;
-		project+='</div><div class="col m6 s12 details">'+projects[i].shortInfo+'</div></div>';
+
+		project = `
+			<div class="row project">
+				<div class="row"><span class="title">${projects[i].projectTitle}</span>
+				<a href="${projects[i].link}" target="_blank"><i class="material-icons right">language</i></a></div>
+				<div class="row golden">
+					<div class="col m8 s12">${toolsUsed}</div>
+					<div class="col m4 s12 period">
+						<span>${projects[i].periodStart}-${projects[i].periodEnd}</span>
+					</div>
+				</div>
+				<div class="row details">${projects[i].shortInfo}</div>
+			</div>`;
 		projectsInnerHTML+=project;
 	}
-	$('#projects').html(projectsInnerHTML);
+	$('#projects').html(`<div class="row section"><h4>Projects</h4>${projectsInnerHTML}</div>`);
 }
 
 function loadWorks(experince){
@@ -52,38 +56,44 @@ function loadWorks(experince){
 	for(i=0;i<works.length;i++){
 		worksInnerHTML+=`
 		<div class="row work">
-			<div class="row title">
-				<a href="${works[i].link}">${works[i].organisation}</a> |
-				${works[i].workPosition} |
-				${works[i].periodStart} - ${works[i].periodEnd}
+			<div class="row">
+				<div class="col m5 s12"><a href="${works[i].link}"><span class="title">${works[i].organisation}</span></a></div>
+				<div class="col m7 s12 position"><span class="title">${works[i].workPosition}</span></div>
 			</div>
-			<hr/>
+			<div class="row golden">
+				<div class="col m7 s12">${works[i].status} - ${works[i].location}</div>
+				<div class="col m5 s12 period">${works[i].periodStart} - ${works[i].periodEnd}</div>
+			</div>
 			<div class="row details">
 				${works[i].experience}
 			</div>
 		</div>`;
 	}
-	$('#experience').html(worksInnerHTML);
+	$('#experience').html(`<div class="row section"><h4>Experience</h4>${worksInnerHTML}</div>`);
 }
 
 function loadEducations(educations){
 	var i=0,j;
 	var educationsInnerHTML = '';
 	for(i=0;i<educations.length;i++){
-		education = '<div class="row education"><div class="col m6 s12">					<div class="row title">'+educations[i].course+'<hr></div><div class="row">'+educations[i].periodStart+'-'+educations[i].periodEnd+'</div><div class="row">'+educations[i].inst+'</div><div class="row">'+educations[i].board+'</div>		<div class="row">Scored: '+educations[i].score+'</div></div><div class="col m6 s12 details"><ul class="collapsible" data-collapsible="accordion"><li><div class="collapsible-header"><i class="material-icons">view_list</i>Completed following Core courses</div><div class="collapsible-body">';
-		var courses = educations[i].courses;
-		courses.sort(function(a,b){
-			return a.sn-b.sn;
-		});
-		var coursesInnerHTML = '';
-		for(j=0;j<courses.length;j++){
-				coursesInnerHTML+='<div class="row"><div class="col m2 s2">'+courses[j].courseCode+'</div><div class="col m8 s8">'+courses[j].courseName+'</div><div class="col m2 s2">'+courses[j].courseScore+'</div></div>';
-		}
-		education+=coursesInnerHTML;
-		education +='</div></li></ul></div></div>';
+		education = `<div class="row education">
+						<div class="row title"><span>${educations[i].course}</span></div>
+						<div class="row golden">
+							<div class="col m8 s12"><span>${educations[i].inst}</span></div>
+							<div class="col m4 s12 period">
+								<span>${educations[i].periodStart}-${educations[i].periodEnd}</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col m8 s12"><span>${educations[i].board}</span></div>
+							<div class="col m4 s12 score">
+								<span>${educations[i].score}</span>
+							</div>
+						</div>
+					</div>`;
 		educationsInnerHTML+=education;
 	}
-	$('#education').html(educationsInnerHTML);
+	$('#education').html(`<div class="row section"><h4>Education</h4>${educationsInnerHTML}</div>`);
 }
 
 function loadLinks(profileLinks){
@@ -93,14 +103,13 @@ function loadLinks(profileLinks){
 	});
 	var profileLinksInnerHTML = '';
 	while(i<profileLinks.length){
-		profileLinksInnerHTML+='<div class="row">'
 		for(j=i;j<profileLinks.length&&j<i+5;j++){
-			profileLinksInnerHTML+='<div class="col s2">													<a href="'+profileLinks[j].link+'" target="_blank" >					<img src="img/'+profileLinks[j].icon+'" alt="'+profileLinks[j].name+'">															</a></div>';
+			profileLinksInnerHTML += `
+			<a href="${profileLinks[j].link}" target="_blank" >${profileLinks[j].name}</a>`;
 		}
-		profileLinksInnerHTML+='</div>';
 		i=j;
 	}
-	$('#links').html(profileLinksInnerHTML);
+	$('#tabs').append(profileLinksInnerHTML);
 }
 
 function loadLikes(likes){
@@ -108,7 +117,7 @@ function loadLikes(likes){
 		return a.sn-b.sn;
 	});
 	var i;
-	var likesInnerHTML = '<h4>I like</h4>';
+	var likesInnerHTML = '<h4 class="title">I like</h4>';
 	for(i=0;i<likes.length;i++){
 		likesInnerHTML+='<object type="image/svg+xml" data="img/'+likes[i].icon+'">'+likes[i].name+'</object>'
 	}
@@ -127,47 +136,31 @@ function onBodyLoad(){
 	$('.collapsible').collapsible({
 		'accordion' : true
 	});
-	$('#tabs').tabs({ 'swipeable': true });
-	onWindowResize();
+	// $('#tabs').tabs({ 'swipeable': true });
 }
-
-function onWindowResize(){
-	const heightPageA = parseInt($('#pagea').css('height').replace('px',''),10);
-	const tabContentHeight = Math.max(heightPageA-48,(window.innerHeight - 50)) + 'px';
-	// console.log(`${document.getElementsByClassName('tabs-content carousel initialized')[0].style.height } to ${tabContentHeight}`);
-	const tabs = document.getElementsByClassName('tabs-content carousel initialized');
-	if (tabs && tabs[0]) {
-		tabs[0].style.height = tabContentHeight;
-	}
-	$('#skills div.m2').css('height',$('#skills div.m2').css('width'));
-	$('#image img').css('height',$('#image img').css('width'));
-}
-
-
-$(window).resize(onWindowResize);
 
 var profile;
-swal({
-		title: "Hello World!!!",
-		text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well."
-		// buttons: ["Nope, I'm just looking around.", "Yes, I'm hiring :)"]
-		// buttons: {
-		// 	cancel: {
-		// 	  text: "Nope.",
-		// 	  value: false,
-		// 	  visible: true,
-		// 	  className: "button-cancel",
-		// 	  closeModal: true,
-		// 	},
-		// 	confirm: {
-		// 	  text: "Yes, I'm hiring.",
-		// 	  value: true,
-		// 	  visible: true,
-		// 	  className: "button-confirm",
-		// 	  closeModal: true
-		// 	}
-		// }
-});
+// swal({
+// 		title: "Hello World!!!",
+// 		text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well."
+// 		buttons: ["Nope, I'm just looking around.", "Yes, I'm hiring :)"]
+// 		buttons: {
+// 			cancel: {
+// 			  text: "Nope.",
+// 			  value: false,
+// 			  visible: true,
+// 			  className: "button-cancel",
+// 			  closeModal: true,
+// 			},
+// 			confirm: {
+// 			  text: "Yes, I'm hiring.",
+// 			  value: true,
+// 			  visible: true,
+// 			  className: "button-confirm",
+// 			  closeModal: true
+// 			}
+// 		}
+// });
 //.then((value)=>{
 // 	if(value===true) {
 // 		swal({
@@ -199,7 +192,7 @@ swal({
 
 
 function loadMoghysSays() {
-	const moghyaSaysInnerHtml = `<div class="col m6">
+	const moghyaSaysInnerHtml = `<div class="col m6 s12">
 		<h6>Recipe for this website:</h6>	
 		<div class="row">
 			Would you like to have your own portfolio in this template ? It"s pretty easy, <a href="https://github.com/moghya">moghya</a> covered it up for everyone out their. 
@@ -209,7 +202,7 @@ function loadMoghysSays() {
 			If you like this website, consider giving a star to its repo <a href="https://github.com/moghya/moghya.github.io/">here</a>.
 		</div>
 	</div>
-	<div class="col m6">
+	<div class="col m6 s12">
 		<h6>Warm Gratitudes</h6>
 		<div class="row">
 			<div class="col m3 s3"><a href="https:https://pages.github.com/">Github Pages</a></div>
@@ -224,7 +217,6 @@ function loadMoghysSays() {
 			<div class="col m3 s3"><a href="https://simpleicons.org/">SimpleIcons</a></div>				
 		</div>
 		<div class="row">
-			<div class="col m3 s3"><a href="http://noraesae.github.io/perfect-scrollbar/">Perfect Scrollbar</a></div>
 			<div class="col m3 s3"><a href="http://www.mattboldt.com/demos/typed-js/">TypedJs</a></div>					
 			<div class="col m3 s3"><a href="https://daneden.github.io/animate.css/">Animate.CSS</a></div>
 			<div class="col m3 s3"><a href="http://t4t5.github.io/sweetalert/">Sweetalert</a></div>
@@ -244,16 +236,16 @@ $.get("js/profile.json",
 		$('title').html(pInfo.nick+'|Portfolio');
 		$('#name').html(pInfo.fname+' '+pInfo.lname+'<sub>&lt'+pInfo.nick+'/&gt</sub>');
 		$('#image img').attr('src','img/'+pInfo.myimg);
-		$('#contact').html(pInfo.mob+'</br>'+pInfo.email);
+		$('#contact').html(`<span>${pInfo.mob}</span></br><span><a href="mailto:${pInfo.email}">${pInfo.email}</a></span>`);
 		$('#summary').html(profile.summary);
-		$('#tabs').html(`					
-			<li class="tab col s2"><a href="#hello">Hello</a></li>
-			<li class="tab col s2"><a href="#skills">Skills</a></li>
-			<li class="tab col s2"><a href="#projects">Projects</a></li>
-			<li class="tab col s3"><a href="#experience">Experience</a></li>
-			<li class="tab col s3"><a href="#education">Education</a></li>
+		$('#tabs').html(`
+			<a href="#home">Home</a>
+			<a href="#experience">Experience</a>
+			<a href="#skills">Skills</a>
+			<a href="#education">Education</a>
+			<a href="#projects">Projects</a>
 		`);
-		$('#believe').html('<h4>I believe</h4><span></span>');
+		$('#believe').html('<h4 class="title">I believe</h4><span></span>');
 		const typed = new Typed('#believe span', {
 			strings: profile.qoutes,
 			typeSpeed: 40,
