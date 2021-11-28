@@ -48,7 +48,36 @@ div.content {
     text-align: justify;
 }
 
-.row {
+#content {
+    position: absolute;
+    top: 5%;
+}
+
+@media screen and (max-width: 1080px) {
+    #content {
+        top: 10%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #content {
+        top: 5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #content {
+        top: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #content {
+        top: 10%;
+    }
+}
+
+#content .row {
     margin-bottom: 0px;
 }
 
@@ -93,6 +122,7 @@ div.content {
     position: fixed;
     width: 100%;
     background-color: #1f1f1d;
+    z-index: 9999;
 }
 
 #tabs a {
