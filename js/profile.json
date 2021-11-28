@@ -501,10 +501,10 @@
                 "periodStart": "Jul'18",
                 "periodEnd": "Sep'18",
                 "details": [
-                    "Developed Distributed Data Protection System Software using Modern C++, Protobufs, RPC.",
-                    "Created Software System Design documents from Product Requirement documents.",
-                    "Planned & Executed of End-to-End feature development using Agile Sprint Methodology.",
-                    "Involved in highly Robust, Distributed, Crash-consistent, Asynchronous, Multi-threaded C++ software development.",
+                    "Developed Distributed Data Protection System Software using Modern C++, Google Protobufs, gRPC.",
+                    "Reviwed Product Requirement documents and created Software System Design documents.",
+                    "Planned & Executed End-to-End feature development following Agile Sprint Methodology.",
+                    "Delivered highly Robust, Distributed, Crash-consistent, Asynchronous, Multi-threaded C++ code.",
                     "Responsibilities included Designing, Developing & Optimizing Backup & Recovery solutions.",
                     "Debugging & Resolving Customer Escalations by actively getting on Customer calls.",
                     "Differential Restore of VMware VMs: Designed, developed & integrated the feature, resulting in reduced amount of data transfer for VM recovery.",
@@ -822,7 +822,7 @@
             "link": "https://github.com/moghya/toGithub"
         }
     ],
-    "summary": "<p>Hello,</p><p>Shubham is a Computer Science professional. He's interested in Algorithms, Distributed Systems, System Software, Web Applications & Machine Learning. He graduated with B. Tech  in Information Technology. Shubham has 3+ years of full-time experience as Software Design & Development Engineer. </p><p>Shubham is Passionate about Programming & delivering Well-Designed, Correct, Clean, Test-Covered & Scalable software solutions. He Seeks to Learn & Tries to all in a way that Makes Life Easier. </p><p>He's currently working at Bloomberg Lp as Senior Software Engineer. At Bloomberg, he's developing Trading Software using Modern C++ & FIX. Before that he was at Cohesity,  A Data Management Company. At Cohesity, he was developing Distributed System Software using Modern C++. Before Cohesity, Shubham was at Media. Net, An AdTech Company. At Media. Net, he was developing Full-stack Web & Desktop applications for search monetisation. </p>",
+    "summary": "<p>Hello,</p><p>Shubham is a Computer Science professional. He's interested in Algorithms, Distributed Systems, System Software, Web Applications & Machine Learning. He graduated with B. Tech  in Information Technology. Shubham has 3+ years of full-time experience as Software Design & Development Engineer. </p><p>Shubham is Passionate about Programming & delivering Well-Designed, Correct, Clean, Test-Covered & Scalable software solutions. He Seeks to Learn & Tries to all in a way that Makes Life Easier. </p><p>He's currently working at Bloomberg Lp as Senior Software Engineer. At Bloomberg, he's developing Trading Software using Modern C++ & FIX. Before that he was at Cohesity,  A Data Management Company. At Cohesity, he was developing Distributed System Software using Modern C++. Before Cohesity, Shubham was at Media.Net, An AdTech Company. At Media.Net, he was developing Full-stack Web & Desktop applications for search monetisation. </p>",
     "profileLinks": [{
             "name": "Github",
             "icon": "github.svg",

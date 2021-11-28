@@ -52,17 +52,19 @@ div.content {
     margin-bottom: 0px;
 }
 
-.page {
-    max-width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
 
-hr {
+/* .page {
     max-width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-}
+} */
+
+
+/* hr {
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+} */
 
 .details span {
     text-align: justify;
@@ -89,11 +91,17 @@ hr {
 
 #tabs {
     position: fixed;
-    top: 5%;
-    left: 0;
-    overflow: hidden;
-    width: 10%;
+    width: 100%;
+    background-color: #1f1f1d;
 }
+
+#tabs a {
+    float: left;
+    padding-left: 1%;
+    text-align: center;
+}
+
+#content {}
 
 #skills .row {
     padding-top: 1%;
@@ -121,12 +129,6 @@ hr {
     overflow: scroll;
 }
 
-#tabs a {
-    opacity: 1;
-    display: block;
-    margin-left: 10%;
-}
-
 #skills .m2 {
     width: 14.666%;
     margin: 1%;
@@ -134,18 +136,6 @@ hr {
     border-radius: 50%;
     font-size: 1.15rem;
     text-align: center;
-}
-
-.collapsible-header,
-.collapsible-body {
-    background: none;
-    border: none;
-    padding: 0;
-}
-
-.collapsible {
-    border: none;
-    box-shadow: none;
 }
 
 .education.col.s12,

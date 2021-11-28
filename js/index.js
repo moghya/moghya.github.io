@@ -124,10 +124,10 @@ function loadLinks(profileLinks) {
     profileLinks.sort((a, b) => a.sn - b.sn);
     var profileLinksInnerHTML = '';
     while (i < profileLinks.length) {
-        profileLinksInnerHTML += `<a href="${profileLinks[i].link}" target="_blank" >${profileLinks[i].name}</a>`;
+        profileLinksInnerHTML += `<a href="${profileLinks[i].link}" target="_blank" > | ${profileLinks[i].name}</a>`;
         ++i;
     }
-    $('#tabs').append(profileLinksInnerHTML);
+    $('#tabs-links').append(profileLinksInnerHTML);
 }
 
 function loadLikes(likes) {
@@ -241,15 +241,16 @@ $.get("js/profile.json",
         profile = data;
         var pInfo = profile.personalInfo;
         $('title').html(pInfo.nick + '|Portfolio');
-        $('#name').html(pInfo.fname + ' ' + pInfo.lname + '<sub>&lt' + pInfo.nick + '/&gt</sub>');
+        $('#name').html(pInfo.fname + ' ' + pInfo.lname);
+        $('#nick').html('&lt' + pInfo.nick + '/&gt');
         $('#image img').attr('src', 'img/' + pInfo.myimg);
         $('#contact').html(`<span>${pInfo.mob}</span></br><span><a href="mailto:${pInfo.email}">${pInfo.email}</a></span>`);
         $('#summary').html(profile.summary);
-        $('#tabs').html(`
-			<a href="#home">Home</a>
-			<a href="#experience">Experience</a>
-			<a href="#education">Education</a>
-			<a href="#skills">Familiar Tools</a>
+        $('#tabs-links').html(`
+			<a href="#home">Home |</a>
+			<a href="#experience">Experience |</a>
+			<a href="#education">Education |</a>
+			<a href="#skills">Familiar Tools |</a>
 			<a href="#projects">Projects</a>
 		`);
         // $('#believe').html('<h4 class="title">I believe</h4><span></span>');
