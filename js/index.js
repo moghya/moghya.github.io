@@ -15,7 +15,7 @@ function loadSkills(skills) {
         skillsInnerHTML += row;
         i += 12;
     }
-    $('#skills').html(`<div class="row section"><h4>Familiar Tools</h4>${skillsInnerHTML}</div>`);
+    $('#skills').html(`<div class="row section"><h4>Skills</h4>${skillsInnerHTML}</div>`);
 }
 
 function loadProjects(projects) {
@@ -124,7 +124,7 @@ function loadLinks(profileLinks) {
     profileLinks.sort((a, b) => a.sn - b.sn);
     var profileLinksInnerHTML = '';
     while (i < profileLinks.length) {
-        profileLinksInnerHTML += `<a href="${profileLinks[i].link}" target="_blank">${profileLinks[i].name}</a>`;
+        profileLinksInnerHTML += `<a href="${profileLinks[i].link}" target="_blank">| ${profileLinks[i].name}</a>`;
         ++i;
     }
     $('#tabs-links').append(profileLinksInnerHTML);
@@ -151,56 +151,54 @@ function onBodyLoad() {
     $('div.content').css('display', 'block');
 }
 
-var profile;
-// swal({
-// 		title: "Hello World!!!",
-// 		text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well."
-// 		buttons: ["Nope, I'm just looking around.", "Yes, I'm hiring :)"]
-// 		buttons: {
-// 			cancel: {
-// 			  text: "Nope.",
-// 			  value: false,
-// 			  visible: true,
-// 			  className: "button-cancel",
-// 			  closeModal: true,
-// 			},
-// 			confirm: {
-// 			  text: "Yes, I'm hiring.",
-// 			  value: true,
-// 			  visible: true,
-// 			  className: "button-confirm",
-// 			  closeModal: true
-// 			}
-// 		}
-// });
-//.then((value)=>{
-// 	if(value===true) {
-// 		swal({
-// 			title: "Hello Talent Scout,",
-// 			text: "Thank you for visiting my webspace. I hope you'll find relevant information here. If you need any other information, kindly reach to me. \n\n Do you need a copy of my resume?",
-// 			buttons: {
-// 				cancel: {
-// 				  text: "I have your resume.",
-// 				  value: false,
-// 				  visible: true,
-// 				  className: "button-cancel",
-// 				  closeModal: true,
-// 				},
-// 				confirm: {
-// 				  text: "Yes, sure.",
-// 				  value: true,
-// 				  visible: true,
-// 				  className: "button-confirm",
-// 				  closeModal: true
-// 				}
-// 			}
-// 		}).then((value)=>{
-// 			if(value===true) { 
-// 				window.open('/Resume_Shubham_Sawant.pdf');
-// 			}
-// 		})
-// 	}
-// });
+swal({
+        title: "Hello World!!!",
+        text: "Hello visitor, you have landed upon little webspace of moghya. I hope you're doing well. \n Are you hiring ?",
+        buttons: {
+            confirm: {
+                text: "Yes, I'm hiring.",
+                value: true,
+                visible: true,
+                className: "button-confirm",
+                closeModal: true
+            },
+            cancel: {
+                text: "Nope :)",
+                value: false,
+                visible: true,
+                className: "button-cancel",
+                closeModal: true,
+            }
+        }
+    })
+    .then((value) => {
+        if (value === true) {
+            swal({
+                title: "Hello Talent Scout,",
+                text: "Thank you for visiting my webspace. I hope you'll find relevant information here. If you need any other information, kindly reach to me. \n\n Do you need my CV?",
+                buttons: {
+                    confirm: {
+                        text: "Yes.",
+                        value: true,
+                        visible: true,
+                        className: "button-confirm",
+                        closeModal: true
+                    },
+                    cancel: {
+                        text: "I have it.",
+                        value: false,
+                        visible: true,
+                        className: "button-cancel",
+                        closeModal: true,
+                    }
+                }
+            }).then((value) => {
+                if (value === true) {
+                    window.open('/Shubham_Sawant_3YoE_SDE_Oct21');
+                }
+            })
+        }
+    });
 
 
 function loadMoghysSays() {
@@ -238,30 +236,21 @@ $.get("js/profile.json",
         if (status !== "success") {
             window.location.href = "/error.html";
         }
-        profile = data;
-        var pInfo = profile.personalInfo;
+        let profile = data;
+        let pInfo = profile.personalInfo;
         $('title').html(pInfo.nick + '|Portfolio');
-        $('#name').html(pInfo.fname + ' ' + pInfo.lname);
+        $('#name').html(`${pInfo.fname} ${pInfo.lname}<sub>&lt;${pInfo.nick}/&gt;`);
         // $('#nick').html('&lt' + pInfo.nick + '/&gt');
         $('#image img').attr('src', 'img/' + pInfo.myimg);
         $('#contact').html(`<span>${pInfo.mob}</span></br><span><a href="mailto:${pInfo.email}">${pInfo.email}</a></span>`);
         $('#summary').html(profile.summary);
         $('#tabs-links').html(`
-			<a href="#home">Home</a>
-			<a href="#experience">Experience</a>
-			<a href="#education">Education</a>
-			<a href="#skills">Familiar Tools</a>
+			<a href="#home">Home |</a>
+			<a href="#experience">Experience |</a>
+			<a href="#education">Education |</a>
+			<a href="#skills">Skills |</a>
 			<a href="#projects">Projects</a>
 		`);
-        // $('#believe').html('<h4 class="title">I believe</h4><span></span>');
-        // const typed = new Typed('#believe span', {
-        // 	strings: profile.qoutes,
-        // 	typeSpeed: 40,
-        // 	cursorChar:"_",
-        // 	loop:true
-        // });
-        // loadLikes(profile.likes);
-        // $('#helloText').html(profile.helloText);
         loadLinks(profile.profileLinks);
         loadSkills(profile.skills);
         loadProjects(profile.projects);

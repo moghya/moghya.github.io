@@ -557,7 +557,8 @@
                 "files"
             ],
             "info": [
-                "C++ Qt Standalone Application keeps track of every patient & its visits. Data collected can be used for Projects of Data Mining & Machine Learning as data sets."
+                "Developed a C++ Qt Desktop application to keep track of patient & visits.",
+                "Mini project for Data Structures course."
             ],
             "link": "https://github.com/moghya/smartHMS"
         },
@@ -577,7 +578,8 @@
                 "oop"
             ],
             "info": [
-                "Simulation of college seat allocation process. Choice filling & Seat Allocation are performed. Modified Gayle-Shapely Algorithm implemented. Can be scaled using C++ CGI for deployment."
+                "C++ Implementation of modified Gayle-Shapely algorithm for Simulation of college seat allocation process.",
+                "Candidates' Choice filling & Seat Allocation is implemented."
             ],
             "link": "https://github.com/moghya/collegeSeatAllocationPrototype"
         },
@@ -602,7 +604,7 @@
                 "mysql"
             ],
             "info": [
-                "It's a web application developed using PHP , MySQL, Bootstrap, JavaScript etc. for conducting practical exams online."
+                "Web application developed using PHP , MySQL, Bootstrap, JavaScript for conducting lab exams online."
             ],
             "link": "https://github.com/moghya/external-exam-portal"
         },
@@ -625,7 +627,9 @@
                 "web scraping"
             ],
             "info": [
-                "It's a search engine made using Python, Beautifulsoup . Which crawls downloaded websites & indexes them. After one time indexing it delivers search results "
+                "Simple search engine developed using Python modules such as Beautifulsoup, Requests.",
+                "Crawler is implemented to crawl downloaded websites & create indexes.",
+                "Built index is stored in sqlite3 db. This index is queried to return search results."
             ],
             "link": ""
         },
@@ -636,7 +640,8 @@
             "periodStart": "May'16",
             "periodEnd": "Present",
             "toolsUsed": [
-                "c++"
+                "c++",
+                "cmake"
             ],
             "tags": [
                 "ds",
@@ -645,9 +650,10 @@
                 "c++"
             ],
             "info": [
-                "Its a ready to use data structures & algorithms c++ template library.Many useful data structures & algorithms are implemented . One should just focus on his/her project necessity & dsalglib will take care of data structures & algorithms."
+                "Templated Object Oriented C++ library of 15+ data structures & algorithms.",
+                "Attempt of developing something similar to that of STL from scratch."
             ],
-            "link": "http://moghya.me/dsalglib/"
+            "link": "https://moghya.me/dsalglib/"
         },
         {
             "show": true,
@@ -667,7 +673,10 @@
                 "python"
             ],
             "info": [
-                "Choosing optimal location for business using data from social media websites contribute largely to the profit.Our System helps business choose optimal location for higher number of check-ins .indirectly helping businesses to increase their profits.We have used to machine learning techniques to help improve our system."
+                "Choosing optimal location for business using data from social media websites contribute largely to the profit.",
+                "Our System helps business choose optimal location for higher number of check-ins.",
+                "Indirectly helping businesses to increase their profits.",
+                "We have used to machine learning techniques to help improve our system."
             ],
             "link": "https://github.com/moghya/Stratergic-Location"
         },
@@ -687,9 +696,10 @@
                 "data analytics"
             ],
             "info": [
-                "This is a simple flask web app implementation of a paper that I'm writing 'Making Sense of Numbers'. This paper proposes method for deriving inferences about prowessness of a stduent using attained graded."
+                "Flask web application serving implementation of a paper that I worked on.",
+                "'Making Sense of Numbers' is paper that proposes method for deriving inferences about prowess of a stduent in certain skills by using attained grades in university exams."
             ],
-            "link": "http://novatoscript.pythonanywhere.com/"
+            "link": "https://novatoscript.pythonanywhere.com/"
         },
         {
             "show": true,
@@ -708,7 +718,7 @@
                 "autmation"
             ],
             "info": [
-                "Its a screen recorder written in python. It records the screen activities.I used PyAutoGUI & PIL modules for this.Audio capturing is yet to be added."
+                "Screen recorder developed using Python modules PyAutoGUI, PIL and TKinter."
             ],
             "link": "https://github.com/moghya/followscreen"
         },
@@ -732,7 +742,9 @@
                 "materialize"
             ],
             "info": [
-                "According to the requirements taken Developed a Digital Library Portal for College Library. All of the sections are dynamic & everything is editable using Admin Panel. Used Quill-Js for implementing Editor for Admin. PHP, MySQL is used."
+                "Developed a Digital Library Portal for College Library as PHP, MySQL web application.",
+                "All of the sections are dynamic & everything is editable using Admin Panel.",
+                "Used Quill-Js for implementing Editor for Admin.."
             ],
             "link": "#"
         },
@@ -753,11 +765,13 @@
                 "php"
             ],
             "info": [
-                "Developed a Web Application using PHP & MongoDB for Book Bank Allotment done by AGCL library of WCE, Sangli. Automated process of Allocation, it was done manually & use to take almost 15-20 days for completion. Our system does it in a single day."
+                "Developed a Web Application using PHP & MongoDB for Book Bank Allotment done by AGCL library of WCE, Sangli.",
+                "Automated manual process of allocation by reducing time taken from almost 15-20 days to a few minutes."
             ],
             "link": "#"
         },
         {
+            "show": true,
             "sn": 4,
             "projectTitle": "Detection & Prevention of Black hole Attack in MANET",
             "periodStart": "Jul'16",
@@ -774,7 +788,8 @@
                 "ns2"
             ],
             "info": [
-                "It was a Team Project. We made changes in AODV protocol to simulate Black hole attack in Mobile & Adhoc Network​ & later implemented techniques for prevention of the Attack."
+                "Made changes in AODV protocol to simulate Black hole attack in Mobile & Adhoc Network using NS2​",
+                "Implemented techniques for prevention of the Attack."
             ],
             "link": "#"
         },
@@ -796,7 +811,9 @@
                 "js"
             ],
             "info": [
-                "Developed a Web Application for Alumni Portal of Jawahar Navodaya Vidyalaya,Washim. It's developed using PHP, HTML, CSS,JavaScript, Bootstrap. All out of scratch. We used MySQL database . Alumni of JNV Washim have to register here with there details & we can searchfor Alumnus with filters."
+                "Developed a Web Application for Alumni Portal of Jawahar Navodaya Vidyalaya,Washim.",
+                "It was developed using PHP, HTML, CSS, JavaScript, Bootstrap. All out of scratch. We used MySQL database.",
+                "Alumni of JNV Washim have to register here with there details & we can search for Alumnus with filters."
             ],
             "link": "#"
         },
@@ -817,7 +834,7 @@
                 "git-api"
             ],
             "info": [
-                "A python app developed for scraping solutions from Sport Programming Websites & uploding them to Github."
+                "Python utility developed for scraping solutions from Sport Programming Websites & uploding them to Github."
             ],
             "link": "https://github.com/moghya/toGithub"
         }
