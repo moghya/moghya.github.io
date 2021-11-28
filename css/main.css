@@ -1,199 +1,222 @@
 div.content {
-	display: none;
+    display: none;
 }
 
 .progress {
-	background-color: white;
-	margin: 25% 0 0 0;
+    background-color: white;
+    margin: 25% 0 0 0;
 }
 
 .progress .indeterminate {
     background-color: #1f1f1f;
 }
 
-#name{
-	font-size:  2.5rem;
-	font-weight: bold;
+#name {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-.title{
-	font-size: 1.5rem;
-	font-weight: bold;
-	/* color: #01a252; */
-	color: teal;
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* color: #01a252; */
+    color: teal;
 }
 
 .position {
-	text-align: right;
+    text-align: right;
 }
 
 .project .col {
-	padding: 0;
+    padding: 0;
 }
 
 .work .col {
-	padding: 0;
+    padding: 0;
 }
 
 .education .col {
-	padding: 0;
+    padding: 0;
 }
 
-#name sub{
-	font-size: 50%;		
-	text-transform: lowercase;
+#name sub {
+    font-size: 30%;
+    text-transform: lowercase;
 }
 
 .content-text {
-	text-align: justify;
+    text-align: justify;
 }
 
 .row {
-	margin-bottom:0px;
-}
-
-.section{
-	padding-top: 0;
-	padding-bottom: 0.5rem;
+    margin-bottom: 0px;
 }
 
 .page {
-	max-width: 50%;
-	margin-left: 25%;
-	margin-right: 25%;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 hr {
-	max-width: 50%;
-	margin-left: 25%;
-	margin-right: 25%;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-.type.col.m4{
-	min-height: 200px;
+.details span {
+    text-align: justify;
+    display: block;
 }
 
-.row.project,.row.education,.row.work{
-	padding: 2%;
-	margin-top: 1%;
-	margin-bottom: 1%;
+.teamName {
+    color: #663399;
 }
 
-#links .col.s2{
-	padding: 0;
+.row.project,
+.row.education,
+.row.work {
+    padding: 1%;
+}
+
+#links .col.s2 {
+    padding: 0;
 }
 
 .tag {
-	font-style: italic;
+    font-style: italic;
 }
 
 #tabs {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	overflow: hidden;
-	width: 25%;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    overflow: hidden;
+    width: 10%;
 }
 
-#tabs a{
-	opacity: 1;
-	display: block;
-	margin-left: 10%;
+#skills .row {
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-#skills .m2{
-	width: 14.666%;
-	margin: 1%;
-	padding: 2%;
-	border-radius: 50%;
-	font-size: 1.15rem;
-	text-align: center;
+.gratitudes a {
+    float: left;
+    padding: 1%;
 }
 
-.collapsible-header,.collapsible-body{
-	background: none;
-	border: none;
-	padding: 0;
+.skill {
+    text-align: center;
 }
 
-
-.collapsible{
-	border: none;
-	box-shadow: none;
+.skill .icon {
+    font-size: 3em;
 }
 
-.education.col.s12, .work.col.s12{
-	margin: 1%;
+.skill span {
+    display: block;
 }
 
-
-object{
-	width: 16%;
-	margin: 1%;
+.tools {
+    overflow: scroll;
 }
 
-#contact{
-	text-align: center;
+#tabs a {
+    opacity: 1;
+    display: block;
+    margin-left: 10%;
 }
 
-#moghyaSays{
-	font-size: 1rem;
+#skills .m2 {
+    width: 14.666%;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 50%;
+    font-size: 1.15rem;
+    text-align: center;
 }
 
-.details{
-	text-align: justify;
+.collapsible-header,
+.collapsible-body {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.collapsible {
+    border: none;
+    box-shadow: none;
+}
+
+.education.col.s12,
+.work.col.s12 {
+    margin: 1%;
+}
+
+object {
+    width: 16%;
+    margin: 1%;
+}
+
+#contact {
+    text-align: center;
+}
+
+#moghyaSays {
+    font-size: 1rem;
 }
 
 .period {
-	text-align: right;
+    text-align: right;
 }
 
 .golden {
-	color: #d3a04d;
-	background-color: none;
+    color: #d3a04d;
+    background-color: none;
 }
 
 .score {
-	text-align: right;
+    text-align: right;
 }
 
-a{
-	color: green;
+a {
+    color: green;
 }
 
-*{scroll-behavior: smooth;}
+* {
+    scroll-behavior: smooth;
+}
 
-body{
-	background-color: #1f1f1d;
-	/* background-color: #646464; */
-	color: #b6b6b6;
-	font-family: "Lekton", monospace;
-	font-size: 1.15rem;
-	font-display: auto;
+body {
+    background-color: #1f1f1d;
+    /* background-color: #646464; */
+    color: #b6b6b6;
+    font-family: "Lekton", monospace;
+    font-size: 1.15rem;
+    font-display: auto;
 }
 
 h6 {
-	font-size: 1.15rem;
+    font-size: 1.15rem;
 }
 
-
 .swal-button {
-	color: white;
-	background-color: #1f1f1f;
-	box-shadow: none !important;
-	text-align: justify;
+    color: white;
+    background-color: #1f1f1f;
+    box-shadow: none !important;
+    text-align: justify;
 }
 
 button:focus {
-	color: white !important;
-	background-color: #1f1f1f !important;
+    color: white !important;
+    background-color: #1f1f1f !important;
 }
 
 button:hover {
-	color: white !important;
-	background-color: #1f1f1f !important;
+    color: white !important;
+    background-color: #1f1f1f !important;
 }
 
 .swal-button-container {
-	display: inline;
+    display: inline;
 }
