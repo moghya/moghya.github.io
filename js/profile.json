@@ -776,7 +776,7 @@
                 "Reverse engineered an android game involving betting over solving math equations.",
                 "Trained a CNN model with 98.79% accuracy to solve the equations"
             ],
-            "link": "https://github.com/moghya/toGithub"
+            "link": "https://medium.com/howcatcancode/how-i-hacked-747-game-7ecffdc74718"
         },
         {
             "show": true,
@@ -793,7 +793,7 @@
                 "Developed a Multithread key-value store application using C++, Network Socket Programing.",
                 "Working to make it a gRPC based distributed key-value store."
             ],
-            "link": "https://github.com/moghya/toGithub"
+            "link": "https://github.com/moghya/key-value-store"
         }
     ],
     "summary": "<p>Hello,</p><p>Shubham is a Computer Science professional. He's interested in Algorithms, Distributed Systems, System Software, Web Applications & Machine Learning. He graduated with B. Tech  in Information Technology. Shubham has 3+ years of full-time experience as Software Design & Development Engineer. </p><p>Shubham is Passionate about Programming & delivering Well-Designed, Correct, Clean, Test-Covered & Scalable software solutions. He Seeks to Learn & Tries to all in a way that Makes Life Easier. </p><p>He's currently working at Bloomberg Lp as Senior Software Engineer. At Bloomberg, he's developing Trading Software using Modern C++ & FIX. Before that he was at Cohesity,  A Data Management Company. At Cohesity, he was developing Distributed System Software using Modern C++. Before Cohesity, Shubham was at Media.Net, An AdTech Company. At Media.Net, he was developing Full-stack Web & Desktop applications for search monetisation. </p>",
