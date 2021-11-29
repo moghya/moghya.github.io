@@ -6,8 +6,8 @@ function loadSkills(skills) {
         for (let j = i; j < i + 12 && j < skills.length; j++) {
             var skill = `
 				<div class="col m1 s3 skill">
-					<span class="icon"><i class="${skills[j].icon}"></i></span>
-					<span>${skills[j].name}</span>
+					<span class="icon"><i class="${skills[j][1]}"></i></span>
+					<span>${skills[j][0]}</span>
 				</div>`;
             row += skill;
         }
@@ -35,18 +35,18 @@ function loadProjects(projects) {
         }
         project = `
 			<div class="row project">
-				<div class="row">
-					<span class="title">${projects[i].projectTitle}</span>
-					<a href="${projects[i].link}" target="_blank"><i class="material-icons">link</i></a>
-				</div>
-				<div class="row golden">
-					<div class="col m8 s8">
-						<span>${toolsUsed}</span>
-					</div>
-					<div class="col m4 s4 period">
-						<span>${projects[i].periodStart}-${projects[i].periodEnd}</span>
-					</div>
-				</div>
+                <div class="row">
+                    <span class="title">${projects[i].projectTitle}</span>
+                    <a href="${projects[i].link}" target="_blank"><i class="material-icons">link</i></a>
+                </div>
+                <div class="row golden">
+                    <div class="col m8 s8">
+                        <span>${toolsUsed}</span>
+                    </div>
+                    <div class="col m4 s4 period">
+                        <span>${projects[i].periodStart}-${projects[i].periodEnd}</span>
+                    </div>
+                </div>
 				<div class="row details">
 					${projectInfo}
 				</div>
@@ -83,7 +83,10 @@ function loadWorks(experince) {
         worksInnerHTML += `
 		<div class="row work">
 			<div class="row">
-				<div class="col m5 s5"><a href="${works[i].link}"><span class="title">${works[i].organisation}</span></a></div>
+				<div class="col m5 s5">
+                    <span class="title">${works[i].organisation}</span>
+                    <a href="${works[i].link}" target="_blank"><i class="material-icons">link</i></a>
+                </div>
 				<div class="col m7 s7 position"><span class="title">${works[i].workPosition}</span></div>
 			</div>
 			<div class="row golden">
@@ -194,7 +197,7 @@ swal({
                 }
             }).then((value) => {
                 if (value === true) {
-                    window.open('/Shubham_Sawant_3YoE_SDE_Oct21');
+                    window.open('/Shubham_Sawant_3YoE_SDE_Oct21.pdf');
                 }
             })
         }
@@ -238,19 +241,11 @@ $.get("js/profile.json",
         }
         let profile = data;
         let pInfo = profile.personalInfo;
-        $('title').html(pInfo.nick + '|Portfolio');
         $('#name').html(`${pInfo.fname} ${pInfo.lname}<sub>&lt;${pInfo.nick}/&gt;`);
         // $('#nick').html('&lt' + pInfo.nick + '/&gt');
         $('#image img').attr('src', 'img/' + pInfo.myimg);
         $('#contact').html(`<span>${pInfo.mob}</span></br><span><a href="mailto:${pInfo.email}">${pInfo.email}</a></span>`);
         $('#summary').html(profile.summary);
-        $('#tabs-links').html(`
-			<a href="#home">Home |</a>
-			<a href="#experience">Experience |</a>
-			<a href="#education">Education |</a>
-			<a href="#skills">Skills |</a>
-			<a href="#projects">Projects</a>
-		`);
         loadLinks(profile.profileLinks);
         loadSkills(profile.skills);
         loadProjects(profile.projects);

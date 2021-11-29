@@ -259,129 +259,34 @@
                     "sn": 4
                 }
             ]
-        },
-        {
-            "periodStart": "Apr'11",
-            "periodEnd": "May'12",
-            "course": "All India Secondary School Examination",
-            "score": "10.00 CGPA",
-            "inst": "Jawahar Navodaya Vidyalaya,Washim",
-            "board": "CBSE Chennai",
-            "courses": [{
-                    "courseCode": "041",
-                    "courseName": "Mathemactics",
-                    "courseScore": "10/10",
-                    "sn": 1
-                },
-                {
-                    "courseCode": "086",
-                    "courseName": "Science",
-                    "courseScore": "10/10",
-                    "sn": 2
-                }
-            ]
         }
     ],
-    "skills": [{
-            "sn": 0,
-            "name": "C",
-            "icon": "devicon-c-plain colored"
-        },
-        {
-            "sn": 1,
-            "name": "C++",
-            "icon": "devicon-cplusplus-plain colored"
-        },
-        {
-            "sn": 2,
-            "name": "Python",
-            "icon": "devicon-python-plain colored"
-        },
-        {
-            "sn": 3,
-            "name": "JavaScript",
-            "icon": "devicon-javascript-plain colored"
-        },
-        {
-            "sn": 16,
-            "name": "NodeJS",
-            "icon": "devicon-nodejs-plain colored"
-        },
-        {
-            "sn": 12,
-            "name": "Go",
-            "icon": "devicon-go-plain colored"
-        },
-        {
-            "sn": 4,
-            "name": "PHP",
-            "icon": "devicon-php-plain colored"
-        },
-        {
-            "sn": 5,
-            "name": "MySQL",
-            "icon": "devicon-mysql-plain colored"
-        },
-        {
-            "sn": 6,
-            "name": "MongoDB",
-            "icon": "devicon-mongodb-plain colored"
-        },
-        {
-            "sn": 8,
-            "name": "Git",
-            "icon": "devicon-git-plain colored"
-        },
-        {
-            "sn": 8,
-            "name": "GitHub",
-            "icon": "devicon-github-plain"
-        },
-        {
-            "sn": 10,
-            "name": "Linux",
-            "icon": "devicon-linux-plain"
-        },
-        {
-            "sn": 11,
-            "name": "Docker",
-            "icon": "devicon-docker-plain colored"
-        },
-        {
-            "sn": 15,
-            "name": "HTML5",
-            "icon": "devicon-html5-plain colored"
-        },
-        {
-            "sn": 13,
-            "name": "CSS3",
-            "icon": "devicon-css3-plain colored"
-        },
-        {
-            "sn": 14,
-            "name": "Ubuntu",
-            "icon": "devicon-ubuntu-plain colored"
-        },
-        {
-            "sn": 16,
-            "name": "Bash",
-            "icon": "devicon-bash-plain"
-        },
-        {
-            "sn": 16,
-            "name": "GCC",
-            "icon": "devicon-gcc-plain colored"
-        },
-        {
-            "sn": 16,
-            "name": "Jenkins",
-            "icon": "devicon-jenkins-plain colored"
-        },
-        {
-            "sn": 16,
-            "name": "VSCode",
-            "icon": "devicon-vscode-plain colored"
-        }
+    "skills": [
+        ["C", "devicon-c-plain colored"],
+        ["C++", "devicon-cplusplus-plain colored"],
+        ["Python", "devicon-python-plain colored"],
+        ["JavaScript", "devicon-javascript-plain colored"],
+        ["NodeJS", "devicon-nodejs-plain colored"],
+        ["Go", "devicon-go-plain colored"],
+        ["PHP", "devicon-php-plain colored"],
+        ["MySQL", "devicon-mysql-plain colored"],
+        ["MongoDB", "devicon-mongodb-plain colored"],
+        ["Redis", "devicon-redis-plain colored"],
+        ["Linux", "devicon-linux-plain"],
+        ["Bash", "devicon-bash-plain"],
+        ["GCC", "devicon-gcc-plain colored"],
+        ["Ubuntu", "devicon-ubuntu-plain colored"],
+        ["Git", "devicon-git-plain colored"],
+        ["Docker", "devicon-docker-plain colored"],
+        ["Kubernetes", "devicon-kubernetes-plain colored"],
+        ["Jenkins", "devicon-jenkins-plain colored"],
+        ["Digital Ocean", "devicon-digitalocean-plain colored"],
+        ["AWS", "devicon-amazonwebservices-original colored"],
+        ["HTML5", "devicon-html5-plain colored"],
+        ["CSS3", "devicon-css3-plain colored"],
+        ["VSCode", "devicon-vscode-plain colored"],
+        ["GitHub", "devicon-github-plain"]
+
     ],
     "experince": [{
             "sn": 6,
@@ -494,12 +399,12 @@
             "link": "https://www.cohesity.com",
             "workPosition": "Member of Technical Staff 3",
             "periodStart": "Feb'20",
-            "periodEnd": "Aug'21",
+            "periodEnd": "July'21",
             "organisation": "Cohesity",
             "experience": [{
-                "team": "Team: Email Marketing Platform",
-                "periodStart": "Jul'18",
-                "periodEnd": "Sep'18",
+                "team": "Squad: Data Protection Virtualisation",
+                "periodStart": "Feb'20",
+                "periodEnd": "July'21",
                 "details": [
                     "Developed Distributed Data Protection System Software using Modern C++, Google Protobufs, gRPC.",
                     "Reviwed Product Requirement documents and created Software System Design documents.",
@@ -516,6 +421,25 @@
             "type": "work",
             "status": "Fulltime",
             "location": "Remote / Pune, India"
+        },
+        {
+            "sn": -2,
+            "link": "https://www.bloomberg.com",
+            "workPosition": "Senior Software Engineer",
+            "periodStart": "Aug'21",
+            "periodEnd": "Present",
+            "organisation": "Bloomberg Lp",
+            "experience": [{
+                "team": "Team: Exchange Trading Connectivity Europe",
+                "periodStart": "Aug'21",
+                "periodEnd": "Present",
+                "details": [
+                    "Developing Exchange Trading Connectivity Software Solutions using C++, Python & FIX."
+                ]
+            }],
+            "type": "work",
+            "status": "Fulltime",
+            "location": "Frankfurt am Main, Germany"
         }
     ],
     "projects": [{

@@ -153,6 +153,8 @@ div.content {
 
 .skill span {
     display: block;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .tools {
