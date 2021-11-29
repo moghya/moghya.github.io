@@ -596,9 +596,7 @@
                 "python"
             ],
             "info": [
-                "Choosing optimal location for business using data from social media websites contribute largely to the profit.",
-                "Our System helps business choose optimal location for higher number of check-ins.",
-                "Indirectly helping businesses to increase their profits."
+                "Applied Machine Learning techniques & built a model to predict Facebook Check-ins at a desired location for business."
             ],
             "link": "https://github.com/moghya/Stratergic-Location"
         },
@@ -757,6 +755,43 @@
             ],
             "info": [
                 "Python utility developed for scraping solutions from Sport Programming Websites & uploding them to Github."
+            ],
+            "link": "https://github.com/moghya/toGithub"
+        },
+        {
+            "show": true,
+            "sn": -1,
+            "projectTitle": "Cheat Bot using Deep Learning",
+            "periodStart": "Jun'18",
+            "periodEnd": "Jun'18",
+            "toolsUsed": [
+                "python",
+                "numpy",
+                "PIL",
+                "requests",
+                "tf"
+            ],
+            "tags": [],
+            "info": [
+                "Reverse engineered an android game involving betting over solving math equations.",
+                "Trained a CNN model with 98.79% accuracy to solve the equations"
+            ],
+            "link": "https://github.com/moghya/toGithub"
+        },
+        {
+            "show": true,
+            "sn": -2,
+            "projectTitle": "In Memory key-value Store",
+            "periodStart": "Jun'21",
+            "periodEnd": "Present",
+            "toolsUsed": [
+                "c++",
+                "cmake"
+            ],
+            "tags": [],
+            "info": [
+                "Developed a Multithread key-value store application using C++, Network Socket Programing.",
+                "Working to make it a gRPC based distributed key-value store."
             ],
             "link": "https://github.com/moghya/toGithub"
         }
