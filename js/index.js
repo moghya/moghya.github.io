@@ -33,11 +33,15 @@ function loadProjects(projects) {
         for (let k = 0; k < projects[i].info.length; ++k) {
             projectInfo += `<li>${projects[i].info[k]}</li>`;
         }
+        projectLink = ``;
+        if (projects[i].link != "#") {
+            projectLink = `<a href="${projects[i].link}" target="_blank"><i class="material-icons">link</i></a>`;
+        }
         project = `
 			<div class="row project">
                 <div class="row">
                     <span class="title">${projects[i].projectTitle}</span>
-                    <a href="${projects[i].link}" target="_blank"><i class="material-icons">link</i></a>
+                    ${projectLink}
                 </div>
                 <div class="row golden">
                     <div class="col m8 s8">
