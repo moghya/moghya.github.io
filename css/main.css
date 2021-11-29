@@ -125,7 +125,7 @@ div.content {
     z-index: 9999;
 }
 
-#tabs a {
+#tabs span {
     float: left;
     padding-left: 1%;
     text-align: center;

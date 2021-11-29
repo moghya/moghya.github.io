@@ -15,7 +15,7 @@ function loadSkills(skills) {
         skillsInnerHTML += row;
         i += 12;
     }
-    $('#skills').html(`<div class="row section"><h4>Skills</h4>${skillsInnerHTML}</div>`);
+    $('#skills').html(`<div class="row section"><h4>Tools</h4>${skillsInnerHTML}</div>`);
 }
 
 function loadProjects(projects) {
@@ -31,7 +31,7 @@ function loadProjects(projects) {
         }
         projectInfo = ``;
         for (let k = 0; k < projects[i].info.length; ++k) {
-            projectInfo += `<span>${projects[i].info[k]}</span>`;
+            projectInfo += `<li>${projects[i].info[k]}</li>`;
         }
         project = `
 			<div class="row project">
@@ -127,7 +127,7 @@ function loadLinks(profileLinks) {
     profileLinks.sort((a, b) => a.sn - b.sn);
     var profileLinksInnerHTML = '';
     while (i < profileLinks.length) {
-        profileLinksInnerHTML += `<a href="${profileLinks[i].link}" target="_blank">| ${profileLinks[i].name}</a>`;
+        profileLinksInnerHTML += `<span> | <a href="${profileLinks[i].link}" target="_blank">${profileLinks[i].name}</a></span>`;
         ++i;
     }
     $('#tabs-links').append(profileLinksInnerHTML);
@@ -197,7 +197,7 @@ swal({
                 }
             }).then((value) => {
                 if (value === true) {
-                    window.open('/Shubham_Sawant_3YoE_SDE_Oct21.pdf');
+                    window.open('/Shubham_Sawant_3YoE_SDE_Nov21.pdf');
                 }
             })
         }
@@ -209,9 +209,12 @@ function loadMoghysSays() {
 	<div class="col m6 s12">
 		<h6 class="title">Recipe for this website:</h6>	
 		<p>
-			Would you like to have your own portfolio in this template ? It"s pretty easy, <a href="https://github.com/moghya">moghya</a> covered it up for everyone out their. 
+			Would you like to have your own portfolio in this template ?
+            It"s pretty easy, <a href="https://github.com/moghya">moghya</a> covered it for everyone. 
 			All the content on this website is dynamically loaded from JSON data.
-			Fork this <a href="https://github.com/moghya/moghya.github.io/">repo</a> on github and edit <a href="https://github.com/moghya/moghya.github.io/blob/master/js/profile.json">js/profile.json</a> for adding your data.
+			Fork this <a href="https://github.com/moghya/moghya.github.io/">repo</a> on github.
+            Edit <a href="https://github.com/moghya/moghya.github.io/blob/master/js/profile.json">js/profile.json</a> for adding your data.
+            Note that you need to run a webserver to ensure that the json file is served and then the HTML is rendered by using data in it.
 			<a href="https://medium.com/howcatcancode/developer-profile-template-2017-219f43147efe">Read more</a><br>
 			If you like this website, consider giving a star to its repo <a href="https://github.com/moghya/moghya.github.io/">here</a>.
 		</p>

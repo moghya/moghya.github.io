@@ -278,15 +278,14 @@
         ["Ubuntu", "devicon-ubuntu-plain colored"],
         ["Git", "devicon-git-plain colored"],
         ["Docker", "devicon-docker-plain colored"],
-        ["Kubernetes", "devicon-kubernetes-plain colored"],
         ["Jenkins", "devicon-jenkins-plain colored"],
         ["Digital Ocean", "devicon-digitalocean-plain colored"],
         ["AWS", "devicon-amazonwebservices-original colored"],
         ["HTML5", "devicon-html5-plain colored"],
         ["CSS3", "devicon-css3-plain colored"],
         ["VSCode", "devicon-vscode-plain colored"],
-        ["GitHub", "devicon-github-plain"]
-
+        ["GitHub", "devicon-github-plain"],
+        ["Jira", "devicon-jira-plain colored"]
     ],
     "experince": [{
             "sn": 6,
@@ -599,8 +598,7 @@
             "info": [
                 "Choosing optimal location for business using data from social media websites contribute largely to the profit.",
                 "Our System helps business choose optimal location for higher number of check-ins.",
-                "Indirectly helping businesses to increase their profits.",
-                "We have used to machine learning techniques to help improve our system."
+                "Indirectly helping businesses to increase their profits."
             ],
             "link": "https://github.com/moghya/Stratergic-Location"
         },
