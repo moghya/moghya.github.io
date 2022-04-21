@@ -201,7 +201,7 @@ swal({
                 }
             }).then((value) => {
                 if (value === true) {
-                    window.open('/Shubham_Sawant_3YoE_SDE_Feb22');
+                    window.open('/Shubham_Sawant_3YoE_SDE_Feb22.pdf');
                 }
             })
         }
